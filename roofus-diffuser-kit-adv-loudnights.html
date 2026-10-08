@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Your Dog Jumps at Every Sound</title>
+<meta name="description" content="Noise sensitivity is the most common anxiety problem in dogs. Why he startles at every truck, door and storm, why it gets worse with age, and what to set up before the next one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1A; --body:#272727; --muted:#5d5d5d;
+    --cream:#F3EDE4; --yellow:#FAD352; --yellow-d:#EDBE2C; --teal:#108474;
+    --mint:#EAF6F4; --line:#E4DED3; --bg:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--body);font-family:"Funnel Sans",Inter,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.55;padding-bottom:96px}
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px}
+  a{color:inherit}
+  p{margin:0 0 22px}
+  strong{font-weight:700;color:var(--ink)}
+  img{display:block;width:100%;height:auto}
+
+  .update{margin:18px 0 30px;background:var(--ink);color:var(--cream);border-radius:12px;padding:16px 22px;font-weight:600;font-size:16px;line-height:1.45}
+  .update a{color:var(--yellow);font-weight:700}
+
+  h1{font-size:27px;line-height:1.22;font-weight:600;color:var(--ink);margin:0 0 24px;letter-spacing:-.2px}
+  h2{font-size:24px;line-height:1.25;font-weight:600;color:var(--ink);margin:40px 0 20px;letter-spacing:-.15px}
+  h3{font-size:21px;line-height:1.3;font-weight:600;color:var(--ink);margin:30px 0 14px}
+
+  .byline{display:flex;align-items:center;gap:14px;margin:0 0 24px}
+  .byline .av{width:62px;height:62px;border-radius:50%;background:var(--cream);display:flex;align-items:center;justify-content:center;flex:none;border:1px solid var(--line)}
+  .byline .av img{width:44px}
+  .byline b{display:block;font-size:16px;color:var(--ink);line-height:1.35}
+  .byline span{font-size:15px;color:var(--muted)}
+
+  figure{margin:6px 0 26px}
+  figure.sq img{aspect-ratio:1/1;object-fit:cover}
+  figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+
+  .stat{background:var(--mint);border-left:4px solid var(--teal);padding:16px 18px;margin:4px 0 26px;font-size:17px;border-radius:0 10px 10px 0}
+  .stat b{font-size:30px;line-height:1;display:block;color:var(--teal);margin-bottom:6px;font-weight:800}
+
+  ul.signs{list-style:none;padding:0;margin:0 0 10px;counter-reset:s}
+  ul.signs li{counter-increment:s;position:relative;padding:0 0 0 46px;margin:0 0 18px;font-size:17px}
+  ul.signs li::before{content:counter(s);position:absolute;left:0;top:-1px;width:32px;height:32px;border-radius:50%;background:var(--yellow);color:var(--ink);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center}
+  ul.signs li b{color:var(--ink)}
+  ul.signs figure{margin:6px 0 24px -46px}
+
+  .chart{background:#FBF8F3;border:1px solid var(--line);border-radius:12px;padding:16px 14px 10px;margin:4px 0 26px}
+  .chart .ttl{font-weight:700;color:var(--ink);font-size:15px;margin:0 4px 8px}
+  .chart svg{display:block;width:100%;height:auto}
+  .chart .note{font-size:12.5px;color:var(--muted);margin:6px 4px 0}
+
+  .items{list-style:none;padding:0;margin:0 0 22px}
+  .items li{padding:0 0 0 0;margin:0 0 16px}
+  .items li b{color:var(--ink)}
+  .checks{list-style:none;padding:0;margin:0 0 24px}
+  .checks li{padding-left:30px;position:relative;margin:0 0 10px;font-weight:600;color:var(--ink)}
+  .checks li::before{content:"";position:absolute;left:0;top:4px;width:20px;height:20px;border-radius:50%;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.4l3 3 6-6.6' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+
+  .safety{font-size:14.5px;color:var(--muted);background:#FBF8F3;border-radius:10px;padding:12px 14px;margin:0 0 26px}
+
+  .countdown{display:flex;gap:12px;align-items:center;background:var(--ink);color:var(--cream);border-radius:12px;padding:14px 16px;margin:0 0 26px}
+  .countdown .n{font-size:30px;font-weight:800;color:var(--yellow);line-height:1;min-width:64px;text-align:center}
+  .countdown .t{font-size:15.5px;line-height:1.4}
+  .countdown .t b{color:#fff}
+
+  .phase h3{display:flex;gap:10px;align-items:baseline}
+  .phase h3 .k{color:var(--teal);font-weight:800}
+
+  .promise{background:var(--mint);border-radius:14px;padding:22px 20px 6px;margin:6px 0 30px}
+  .promise h3{margin-top:0}
+  .seal{display:flex;align-items:center;gap:14px;margin:0 0 16px}
+  .seal .ring{width:74px;height:74px;border-radius:50%;border:3px solid var(--teal);display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none;color:var(--teal);font-weight:800;line-height:1}
+  .seal .ring b{font-size:26px;color:var(--teal)}
+  .seal .ring small{font-size:10px;letter-spacing:.6px}
+  .seal p{margin:0;font-weight:600;color:var(--ink)}
+
+  .offer{background:var(--cream);border:2px solid var(--teal);border-radius:12px;padding:22px 20px 6px;margin:10px 0 26px}
+  .offer h2{margin:0 0 14px;font-size:23px}
+  .offer .pack{display:flex;gap:14px;align-items:center;margin:0 0 18px}
+  .offer ul{margin:0 0 20px;padding-left:20px}
+  .offer li{margin:0 0 10px}
+
+  .offer .pack{display:flex;gap:14px;align-items:center;margin:0 0 14px}
+  .offer .pack img{width:38%;border-radius:10px;background:#fff;flex:none}
+  .pinfo{min-width:0}
+  .pname{margin:0 0 6px!important;font-size:19px;font-weight:800;line-height:1.25;color:var(--ink)}
+  .specs{margin:0}
+  .specs dt{font-size:11.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--teal);margin:0 0 2px}
+  .specs dd{margin:0 0 8px;font-size:14.5px;line-height:1.35;color:var(--ink)}
+  .usps{list-style:none;padding:0!important;margin:0 0 14px!important;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .usps li{background:#fff;border-radius:10px;padding:10px 6px;text-align:center;font-size:12.5px;font-weight:700;line-height:1.25;color:var(--ink);margin:0!important}
+  .usps svg{display:block;width:26px;height:26px;margin:0 auto 6px;fill:none;stroke:var(--teal);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .pricebar{background:#fff;border-radius:10px;padding:14px 16px;margin:0 0 18px;text-align:center}
+  .pb-main{margin:0!important;font-size:17px;color:var(--ink)}
+  .pb-main b{font-size:30px;font-weight:800;margin-left:4px;vertical-align:-3px}
+  .pb-save{margin:6px 0 0!important;font-size:clamp(24px,8vw,34px);line-height:1.05;font-weight:800;letter-spacing:.3px;color:var(--teal);white-space:nowrap}
+  .trust{list-style:none;padding:0!important;margin:0 0 18px!important;font-size:15px}
+  .trust li{padding-left:24px;position:relative;margin:0 0 10px!important}
+  .trust li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--teal);font-weight:800}
+  .offer .cta{margin:6px 0 10px}
+  .fine{font-size:13px;color:var(--muted);text-align:center;margin:0 0 14px!important}
+  .cta{display:block;text-align:center;background:var(--yellow);color:var(--ink);font-weight:800;font-size:22px;letter-spacing:.3px;text-decoration:none;border-radius:999px;padding:20px 16px;margin:8px 0 34px;box-shadow:0 3px 0 var(--yellow-d)}
+  .cta:active{transform:translateY(2px);box-shadow:0 1px 0 var(--yellow-d)}
+
+  .refs{font-size:15px;color:var(--body)}
+  .refs p{margin:0 0 14px}
+
+  footer{background:var(--ink);color:#e9e5de;text-align:center;font-size:13.5px;line-height:1.5;padding:34px 20px 40px;margin-top:20px}
+  footer p{max-width:600px;margin:0 auto 16px}
+  footer .big{font-weight:700;text-transform:uppercase;color:#fff;font-size:14px}
+  footer a{color:#e9e5de}
+
+  .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));z-index:9;transform:translateY(110%);transition:transform .25s ease}
+  .sticky.on{transform:none}
+  .sticky a{display:block;max-width:616px;margin:0 auto;text-align:center;background:var(--yellow);color:var(--ink);font-weight:800;font-size:19px;text-decoration:none;border-radius:8px;padding:15px 10px;letter-spacing:.3px}
+
+  @media (min-width:700px){
+    body{font-size:18px}
+    h1{font-size:34px}
+    h2{font-size:28px}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="update">UPDATE: Roofus launch pricing is live. Get up to 59% off the Calming Diffuser Kit, backed by a 60-day money-back guarantee, ONLY on the official site <a href="https://get.roofuspet.com/calming-diffuser" class="go" data-cta="adv-banner">[HERE]</a>.</div>
+
+  <h1>Most Owners Think Their Dog Is "Just Jumpy." Here's Why He Startles at Every Sound, and Why It Gets Worse With Age.</h1>
+
+  <div class="byline">
+    <div class="av"><img src="assets/diffuser-loudnights/logo.svg" alt="Roofus"></div>
+    <div><b>By the Roofus Pet team</b><span>Sources listed below</span></div>
+  </div>
+
+  <figure><img src="assets/diffuser-loudnights/hero.jpg" alt="A scared scruffy dog pressed flat under a side table, a white delivery truck parked outside the window" width="1100" height="821"></figure>
+
+  <p>It's 3:40 on a Tuesday. A truck pulls up outside and the brakes hiss. You barely notice. <strong>He does.</strong></p>
+
+  <p>His ears go flat. He's off the couch before the door slams, and wedged under the side table by the time the doorbell rings. You put down what you were doing and get on the floor, one hand out, waiting for the shaking to stop. Again. It's the third time today.</p>
+
+  <figure class="sq"><img src="assets/diffuser-loudnights/morning.jpg" alt="Looking down at an owner's knees on the hallway floor at dawn, a worried black Lab curled up beside them" loading="lazy" width="1100" height="1100"></figure>
+
+  <p>Because it's never just one sound. It's the trash truck at 6am. The neighbor's car door. The garage door, the leaf blower, the pan you dropped in the kitchen, the storm that rolls in at four. The big nights everyone talks about are only the loudest version of something he lives with every single day.</p>
+
+  <p>Plenty of owners with two dogs see the same strange thing. Same house, same walks, same food. One sleeps straight through the storm. The other is wedged behind the toilet, panting. Researchers find big differences between breeds, which points to the dog, not to how you raised him.<sup>[1]</sup></p>
+
+  <p>It isn't that you spoiled him. It isn't that he's being dramatic. And it is very unlikely to be something he grows out of.</p>
+
+  <div class="stat"><b>About 1 in 3 dogs</b>was noise sensitive in one large study of 13,700 pet dogs, making it the most common anxiety trait the researchers found. And it became more common as dogs got older.<sup>[1]</sup></div>
+
+  <p>In a separate UK survey, nearly half of owners said their dog showed at least one sign of fear at loud noises like fireworks, thunder or gunshots.<sup>[2]</sup> You are not the only one getting down on the floor three times a day. You're one of millions.</p>
+
+  <figure class="sq"><img src="assets/diffuser-loudnights/storm.jpg" alt="A brindle dog hiding far under a desk on a rainy day" loading="lazy" width="1100" height="1100"></figure>
+
+  <h2>7 Signs Your Dog's Noise Fear Is Bigger Than "A Little Jumpy"</h2>
+
+  <ul class="signs">
+    <li><b>He hears it before you do.</b> His ears go back at a car door you barely noticed.</li>
+    <li><b>He hides in the same spot every time:</b> under the table, behind the couch, the bathtub, the back of the closet.</li>
+    <li><b>He pants and paces when the room isn't warm,</b> walking loops and ignoring his own bed.
+      <figure class="sq"><img src="assets/diffuser-loudnights/pant.jpg" alt="A tense pit bull mix pacing the living room with its tail tucked" loading="lazy" width="1100" height="1100"></figure></li>
+    <li><b>He won't take the treat he'd normally do anything for.</b> A dog too scared to eat is telling you a lot.
+      <figure class="sq"><img src="assets/diffuser-loudnights/treat.jpg" alt="An owner holding out a biscuit while a goldendoodle turns its head away" loading="lazy" width="1100" height="1029"></figure></li>
+    <li><b>He follows you from room to room</b> and won't lie down, even when the house is quiet.</li>
+    <li><b>He scratches at doors or tries to bolt</b> the second one opens.
+      <figure class="sq"><img src="assets/diffuser-loudnights/door.jpg" alt="A German Shepherd mix pawing at the front door, old scratch marks on the paint" loading="lazy" width="1100" height="1100"></figure></li>
+    <li><b>It's worse than it was a year ago.</b> Sounds he used to ignore now send him running.</li>
+  </ul>
+
+  <p>If even two or three of those sound like your dog, this is not a quirk. And here's the pattern most owners miss: <strong>by the time the bang happens, it's already too late to calm him down.</strong></p>
+
+  <h2>Why Comforting Him After the Bang Rarely Seems to Help</h2>
+
+  <p>Every dog has a starting level of tension in the room. Each bang lands on top of it.</p>
+
+  <p>A dog who's settled in the room has headroom. He startles, looks at you, and comes back down. A dog who's already on edge has none. The same noise pushes him straight over the line into panic, and once he's there, no amount of petting, treats or soothing voices brings him back quickly.</p>
+
+  <div class="chart" role="img" aria-label="Illustration: the same three everyday noises push an already on-edge dog over the panic line, while a settled dog startles and recovers below it.">
+    <div class="ttl">Same noises. Different starting point.</div>
+    <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" font-family="Funnel Sans, system-ui, sans-serif">
+      <rect x="0" y="0" width="600" height="360" fill="#FBF8F3"/>
+      <line x1="10" y1="96" x2="590" y2="96" stroke="#C0392B" stroke-width="3" stroke-dasharray="10 8"/>
+      <text x="12" y="132" font-size="28" font-weight="800" fill="#C0392B">PANIC LINE</text>
+      <g stroke="#B9B2A6" stroke-width="2" stroke-dasharray="4 6">
+        <line x1="210" y1="40" x2="210" y2="318"/><line x1="370" y1="40" x2="370" y2="318"/><line x1="530" y1="40" x2="530" y2="318"/>
+      </g>
+      <g fill="#1A1A1A" font-size="28" font-weight="800" text-anchor="middle">
+        <text x="210" y="348">TRUCK</text><text x="370" y="348">DOOR</text><text x="530" y="348">STORM</text>
+      </g>
+      <path d="M10 150 L180 148 L210 46 L238 64 L280 80 L340 84 L370 40 L398 58 L440 72 L500 76 L530 36 L558 54 L590 66" fill="none" stroke="#C0392B" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M10 270 L180 270 L210 168 L240 228 L280 260 L340 266 L370 166 L400 230 L440 260 L500 266 L530 164 L560 230 L590 262" fill="none" stroke="#108474" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="12" y="192" font-size="30" font-weight="800" fill="#C0392B">On edge</text>
+      <text x="12" y="306" font-size="30" font-weight="800" fill="#108474">Settled first</text>
+    </svg>
+    <div class="note">Illustration of the idea, not measured data.</div>
+  </div>
+
+  <p>It also explains why it gets worse over time. Every time he tips into panic, he learns to brace for the next sound, so the fear kicks in sooner and at quieter noises. Behavior researchers call this sensitization, and it fits with the finding that noise fear grows more common with age.<sup>[1][2]</sup></p>
+
+  <p>And before anyone says it: yes, some dogs need more than a home routine. If your dog hurts himself, breaks through doors or windows, or panics for hours, please talk to your vet. There are prescription options that help, and nothing here replaces them.</p>
+
+  <p>But for most noise-shy dogs, what's missing isn't a better fix after the bang. <strong>It's calm that's already in the room before the noise starts.</strong></p>
+
+  <h2>Why Holding Him, Turning Up the TV and the Last-Minute Fixes Keep Falling Short</h2>
+
+  <p>Every owner of a noise-scared dog has a routine. You sit with him. You turn the TV up. You try the snug wrap, and the calming chew when you see the storm coming.</p>
+
+  <p>Some of those can take the edge off, and if they help your dog, keep them. But look at when every one of them starts: <strong>when the noise starts.</strong> They are all "during." Nothing in that routine is working on "before," which is the part that decides how hard he falls.</p>
+
+  <p>And the stakes are higher than a bad afternoon. A dog who panics at a sound doesn't always hide. Sometimes he runs, and a dog who startles at the front door is a dog who can bolt straight through it. All it takes is a delivery and a door held open for ten seconds.</p>
+
+  <h2>Why the Calm Has to Start Before the Noise</h2>
+
+  <p>Dogs talk to each other with scent long before they bark. Pheromones are the signals they use to say things like "you're safe here," and appeasing pheromones are one of the few calming approaches designed to work quietly in the background, day and night, without asking your dog to swallow anything.</p>
+
+  <p>That's the idea behind the <strong>Roofus Calming Diffuser Kit</strong>. You screw a refill into the diffuser, plug it into the wall in the room where your dog spends his time, and it releases CalmSignal&trade;, a pheromone analogue, around the clock. There's nothing to set, nothing to give at the right minute, and no smell you'll notice.</p>
+
+  <figure><img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700" style="max-width:300px;margin:0 auto"></figure>
+
+  <p>Appeasing pheromones have been studied for exactly this. In a placebo-controlled study, dogs wearing a dog-appeasing pheromone collar were rated significantly less fearful during recorded thunder than dogs on a placebo.<sup>[3]</sup> In an earlier trial of dogs afraid of fireworks, owners reported improvement in most of the fear signs they tracked after a few weeks of continuous use.<sup>[4]</sup></p>
+
+  <p>To be clear: those studies used another brand's pheromone products, a collar in one and a diffuser in the other. Roofus hasn't been tested in its own published trial yet. We'd rather tell you that plainly than let you assume otherwise, and it's a big part of why we back every kit with a 60-day money-back guarantee.</p>
+
+  <p>Timing matters too. A diffuser is designed to run in the background over days and weeks, not minutes. <strong>Plugged in when the thunder starts, it's late. Running all day, every day, it's part of the room he lives in.</strong></p>
+
+  <h2>Don't Wait for the Next Bang. Here's What's in the Kit.</h2>
+
+  <ul class="items">
+    <li><b>The plug-in diffuser:</b> screw in a refill and plug it into a wall outlet. No buttons, no app, no settings.</li>
+    <li><b>2 CalmSignal&trade; refills (48 mL each):</b> each one lasts about 30 days, so one kit covers about two months.</li>
+    <li><b>CalmSignal&trade; pheromone analogue:</b> the calming signal in every refill, released around the clock.</li>
+    <li><b>Nothing to swallow, nothing to smell:</b> no sedatives, no medication, and no fragrance filling your house.</li>
+  </ul>
+
+  <ul class="checks">
+    <li>Drug-free and odorless to people</li>
+    <li>Runs 24/7, so it's working on the quiet days too</li>
+    <li>Fits alongside your vet's plan (ask your vet)</li>
+    <li>One diffuser per room he uses (walls block it)</li>
+  </ul>
+
+  <a class="cta go" data-cta="adv-mid1" href="https://get.roofuspet.com/calming-diffuser">SEE THE LAUNCH OFFER &rarr;</a>
+
+  <div class="safety"><b>Safety first:</b> plug it in where your dog can't reach, chew or lick it. The liquid is for diffusing only and must never be swallowed. Keep away from children and pets.</div>
+
+  <h2>The Plug-In-Early Plan: Get Ahead of the Next Jump</h2>
+
+  <div class="countdown">
+    <div class="n">24/7</div>
+    <div class="t"><b>His triggers don't keep a schedule.</b> The truck, the door, the 4pm storm. So the calm can't run on one either.</div>
+  </div>
+
+  <p>The first changes to look for are small behaviors, not a dramatic "cure": he lies down sooner, he stops patrolling the windows, he takes the treat. Here's the simple plan:</p>
+
+  <div class="phase">
+    <h3><span class="k">1.</span> Day 0: Plug in where he hides, and where you sit</h3>
+    <p>The scent doesn't travel through walls, so put one diffuser in the room he runs to when he's scared and one where the family spends the evening. That's why we suggest the 2-room kit for most homes.</p>
+
+    <h3><span class="k">2.</span> Days 1 to 7: Build his den</h3>
+    <p>Put a bed or an open crate with a blanket in the diffuser room. Drop a treat there on calm days so it becomes the good spot, never a punishment spot. When a sound hits, you want him running to the den, not under the table.</p>
+
+    <h3><span class="k">3.</span> Days 7 to 14 and onward: Keep it running</h3>
+    <p>This is the part that feels like nothing is happening, and it's the part that matters most. Quiet, ordinary days with the diffuser on are how his background level comes down. Keep it plugged in and swap the refill every 30 days. Storms come without warning.</p>
+
+    <h3><span class="k">4.</span> The noisy moments: Be boring</h3>
+    <p>When the storm rolls in or the truck pulls up, keep the den open, put the TV or a fan on for steady background sound, and clip on a leash before you open the front door. Stay calm and ordinary yourself. Your dog reads you as much as the noise.</p>
+  </div>
+
+  <p>One promise we won't make: that he'll never flinch again. Some dogs will still jump at the big ones. The goal is a dog who startles, looks at you, and settles back down, instead of a dog who spends the afternoon wedged under the table.</p>
+
+<a class="cta go" data-cta="adv-mid2" href="https://get.roofuspet.com/calming-diffuser">SEE THE LAUNCH OFFER &rarr;</a>
+
+  <h2>The Day You're Actually Waiting For</h2>
+
+  <figure><img src="assets/diffuser-loudnights/calmdoor.jpg" alt="A delivery box just inside the front door while the dog sleeps on its bed in the hallway" loading="lazy" width="1100" height="1100"></figure>
+
+  <p>Picture it. 3:40 on a Tuesday. The truck pulls up, the doorbell goes, you carry the box inside. You turn around, and he hasn't moved off his bed. One ear lifts. Then he sighs and goes back to sleep.</p>
+
+  <p>You're not on the floor under the table. You just answered the door, like anyone else.</p>
+
+  <figure class="sq"><img src="assets/diffuser-loudnights/rain.jpg" alt="A border collie asleep against its owner's legs on the sofa while rain runs down the window" loading="lazy" width="1100" height="1100"></figure>
+
+  <p>Or it's a rainy afternoon, the storm is hammering the windows, and you realize an hour in that you never even checked on him. He's asleep against your legs.</p>
+
+  <div class="promise">
+    <h3>We're new, so here's our promise instead of a wall of reviews</h3>
+    <div class="seal"><div class="ring"><b>60</b><small>DAYS</small></div><p>Give Roofus 60 days. Not seeing a calmer dog by then? Email us and we'll send back every penny.</p></div>
+    <p>Sixty days is long enough to plug in, live through a few hundred ordinary truck-door-doorbell moments, and judge it on your own dog. If it doesn't earn its spot on your wall, you get your money back.</p>
+  </div>
+
+  <p>Your dog spends his whole life watching your face for cues that everything is OK. When the world gets loud, he can't find that answer on his own. So set the calm up in the room before the noise arrives.</p>
+
+  <div class="offer" id="offer">
+    <h2>Today's Launch Offer</h2>
+    <div class="pack">
+      <img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700">
+      <div class="pinfo">
+        <p class="pname">Roofus Calming Diffuser Kit</p>
+        <dl class="specs">
+          <dt>What's inside</dt><dd>1 plug-in diffuser + 2 CalmSignal&trade; refills per room</dd>
+          <dt>How long</dt><dd>About 2 months per kit</dd>
+        </dl>
+      </div>
+    </div>
+    <ul class="usps">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M8.5 12l2.4 2.4L15.5 9.8"/></svg><span>Safe &amp; Drug-Free Relief</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Helps Ease Stress Behaviors</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Round-the-Clock Calm</span></li>
+    </ul>
+    <div class="pricebar">
+      <p class="pb-main">Launch price from <b>$31.49</b></p>
+      <p class="pb-save">SAVE UP TO 59%</p>
+    </div>
+    <ul class="trust">
+      <li><b>Most homes need 2 rooms:</b> where he hides, and where the family spends the day.</li>
+      <li>Odorless to people. Just plug it in, nothing to set.</li>
+      <li><b>Not calmer in 60 days?</b> Email us and get every penny back.</li>
+    </ul>
+    <a class="cta go" data-cta="adv-buybox" href="https://get.roofuspet.com/calming-diffuser">CHECK AVAILABILITY &rarr;</a>
+    <p class="fine">You'll pick your kit size on the next page. Savings are with Subscribe &amp; Save (up to 59% on the 3-room kit). Skip or cancel anytime.</p>
+  </div>
+
+  <p>Plug in now, and the next truck, door or storm arrives in a room that's already calm. Try it for 60 days with launch pricing, and see it on your own dog.</p>
+
+  <h2>References</h2>
+  <div class="refs">
+    <p>[1] Salonen M, Sulkama S, Mikkola S, et al. <em>Prevalence, comorbidity, and breed differences in canine anxiety in 13,700 Finnish pet dogs.</em> Scientific Reports, 2020;10:2962.</p>
+    <p>[2] Blackwell EJ, Bradshaw JWS, Casey RA. <em>Fear responses to noises in domestic dogs: Prevalence, risk factors and co-occurrence with other fear related behaviour.</em> Applied Animal Behaviour Science, 2013.</p>
+    <p>[3] Landsberg GM, Beck A, Lopez A, Deniaud M, Araujo JA, Milgram NW. <em>Dog-appeasing pheromone collars reduce sound-induced fear and anxiety in beagle dogs: a placebo-controlled study.</em> Veterinary Record, 2015. (A pheromone collar from a different brand.)</p>
+    <p>[4] Sheppard G, Mills DS. <em>Evaluation of dog-appeasing pheromone as a potential treatment for dogs fearful of fireworks.</em> Veterinary Record, 2003. Open trial, no placebo group. (Tested a different brand's product.)</p>
+  </div>
+
+</main>
+
+<footer>
+  <p class="big">This is an advertisement and not an actual news article, blog, or consumer protection update.</p>
+  <p>Roofus supports calm behavior at home. It is not a substitute for veterinary care and is not intended to diagnose, treat, cure or prevent any disease. If your dog's behavior changes suddenly or his fear is severe, talk to your veterinarian. Individual results vary. Photos are illustrative.</p>
+  <p>&copy; 2026 Roofus Pet LLC &middot; Wilmington, DE &middot; <a href="https://roofuspet.com/policies/refund-policy">Refund Policy</a> &middot; <a href="https://roofuspet.com/policies/privacy-policy">Privacy Policy</a></p>
+</footer>
+
+<div class="sticky" id="sticky"><a class="go" data-cta="adv-sticky" href="https://get.roofuspet.com/calming-diffuser">CHECK AVAILABILITY</a></div>
+
+<script>
+(function(){
+  // Send every CTA to the custom PDP with the ad-click params. The PDP stores utm_*, fbclid, lp and cta
+  // as Shopify cart attributes, so orders from this page and the CTA that sent them show in Shopify.
+  var LP_TAG = "/adv/every-sound";
+  var incoming = new URLSearchParams(location.search);
+  document.querySelectorAll("a.go").forEach(function(a){
+    var url = new URL(a.getAttribute("href"));
+    incoming.forEach(function(v, k){ if (!url.searchParams.has(k)) url.searchParams.set(k, v); });
+    url.searchParams.set("lp", LP_TAG);
+    if (a.dataset.cta) url.searchParams.set("cta", a.dataset.cta);
+    a.href = url.toString();
+  });
+
+  // sticky CTA: show after the hero, hide while the buy box is on screen
+  var s = document.getElementById("sticky"), offer = document.getElementById("offer"), offerVisible = false;
+  function onScroll(){ s.classList.toggle("on", window.scrollY > 700 && !offerVisible); }
+  if ("IntersectionObserver" in window) new IntersectionObserver(function(en){ offerVisible = en[0].isIntersecting; onScroll(); }).observe(offer);
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+})();
+</script>
+</body>
+</html>

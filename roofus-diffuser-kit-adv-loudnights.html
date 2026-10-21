@@ -16,7 +16,7 @@
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
-  body{margin:0;background:var(--bg);color:var(--body);font-family:"Funnel Sans",Inter,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.55;padding-bottom:96px}
+  body{margin:0;background:var(--bg);color:var(--body);font-family:"Funnel Sans",Inter,system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.55}
   .wrap{max-width:640px;margin:0 auto;padding:0 20px}
   a{color:inherit}
   p{margin:0 0 22px}
@@ -38,6 +38,8 @@
 
   figure{margin:6px 0 26px}
   figure.sq img{aspect-ratio:1/1;object-fit:cover}
+  figure.prod{background:radial-gradient(circle at 50% 55%,#fff 0,#fff 30%,var(--cream) 75%);border-radius:14px;padding:16px 0 8px}
+  figure.prod img{width:48%;max-width:210px;margin:0 auto;mix-blend-mode:multiply}
   figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
 
   .stat{background:var(--mint);border-left:4px solid var(--teal);padding:16px 18px;margin:4px 0 26px;font-size:17px;border-radius:0 10px 10px 0}
@@ -79,38 +81,53 @@
   .seal .ring small{font-size:10px;letter-spacing:.6px}
   .seal p{margin:0;font-weight:600;color:var(--ink)}
 
-  .offer{background:var(--cream);border:2px solid var(--teal);border-radius:12px;padding:22px 20px 6px;margin:10px 0 26px}
-  .offer h2{margin:0 0 14px;font-size:23px}
-  .offer .pack{display:flex;gap:14px;align-items:center;margin:0 0 18px}
   .offer ul{margin:0 0 20px;padding-left:20px}
   .offer li{margin:0 0 10px}
 
-  .offer .pack{display:flex;gap:14px;align-items:center;margin:0 0 14px}
-  .offer .pack img{width:38%;border-radius:10px;background:#fff;flex:none}
-  .pinfo{min-width:0}
-  .pname{margin:0 0 6px!important;font-size:19px;font-weight:800;line-height:1.25;color:var(--ink)}
-  .specs{margin:0}
-  .specs dt{font-size:11.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--teal);margin:0 0 2px}
-  .specs dd{margin:0 0 8px;font-size:14.5px;line-height:1.35;color:var(--ink)}
   .usps{list-style:none;padding:0!important;margin:0 0 14px!important;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
   .usps li{background:#fff;border-radius:10px;padding:10px 6px;text-align:center;font-size:12.5px;font-weight:700;line-height:1.25;color:var(--ink);margin:0!important}
   .usps svg{display:block;width:26px;height:26px;margin:0 auto 6px;fill:none;stroke:var(--teal);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .pricebar{background:#fff;border-radius:10px;padding:14px 16px;margin:0 0 18px;text-align:center}
-  .pb-main{margin:0!important;font-size:17px;color:var(--ink)}
-  .pb-main b{font-size:30px;font-weight:800;margin-left:4px;vertical-align:-3px}
-  .pb-save{margin:6px 0 0!important;font-size:clamp(24px,8vw,34px);line-height:1.05;font-weight:800;letter-spacing:.3px;color:var(--teal);white-space:nowrap}
   .trust{list-style:none;padding:0!important;margin:0 0 18px!important;font-size:15px}
   .trust li{padding-left:24px;position:relative;margin:0 0 10px!important}
   .trust li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--teal);font-weight:800}
-  .offer .cta{margin:6px 0 10px}
-  .fine{font-size:13px;color:var(--muted);text-align:center;margin:0 0 14px!important}
+  .offer{background:#fff;border-radius:18px;margin:14px 0 30px;overflow:hidden;box-shadow:0 10px 30px rgba(26,26,26,.12),0 0 0 2px var(--ink)}
+  .o-head{background:var(--ink);color:#fff;text-align:center;padding:16px 18px 18px}
+  .o-eyebrow{display:inline-block;background:var(--yellow);color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;border-radius:999px;padding:4px 12px;margin-bottom:8px}
+  .o-head h2{margin:0;color:#fff;font-size:25px;line-height:1.2}
+  .o-body{padding:18px 18px 8px}
+  .o-stage{position:relative;background:radial-gradient(circle at 50% 55%,#fff 0,#fff 30%,var(--cream) 72%);border-radius:14px;padding:14px 0 6px;margin:0 0 12px}
+  .o-stage img{width:52%;max-width:220px;margin:0 auto;mix-blend-mode:multiply}
+  .o-seal{position:absolute;top:10px;right:10px;width:66px;height:66px;border-radius:50%;background:var(--teal);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;transform:rotate(-10deg);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--teal)}
+  .o-seal b{font-size:22px;font-weight:800}
+  .o-seal span{font-size:10px;font-weight:800;letter-spacing:1px}
+  .o-seal small{font-size:7.5px;font-weight:800;letter-spacing:.5px;margin-top:1px}
+  .o-name{text-align:center;font-size:20px;font-weight:800;color:var(--ink);margin:0 0 12px!important}
+  .o-specs{display:grid;grid-template-columns:1.35fr 1fr;gap:8px;margin:0 0 12px}
+  .o-specs div{background:var(--cream);border-radius:10px;padding:10px 12px;font-size:14px;line-height:1.35;color:var(--ink)}
+  .o-specs span{display:block;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--teal);margin-bottom:3px}
+  .offer .usps li{background:var(--cream)}
+  .o-ticket{position:relative;background:#FFF8DD;border:2px dashed var(--yellow-d);border-radius:12px;text-align:center;padding:14px 12px 12px;margin:4px 0 12px}
+  .o-ticket::before,.o-ticket::after{content:"";position:absolute;top:50%;width:20px;height:20px;margin-top:-10px;background:#fff;border-radius:50%}
+  .o-ticket::before{left:-12px}
+  .o-ticket::after{right:-12px}
+  .t-price{margin:0!important;font-size:16px;color:var(--ink)}
+  .t-price b{font-size:28px;font-weight:800;margin-left:4px;vertical-align:-3px}
+  .t-save{margin:4px 0 0!important;font-size:clamp(26px,9vw,36px);line-height:1.05;font-weight:800;letter-spacing:.3px;color:var(--teal);white-space:nowrap}
+  .o-tip{font-size:14.5px;text-align:center;margin:0 0 6px!important;color:var(--body)}
+  .o-cta{margin:10px 0 12px!important;font-size:21px;animation:nudge 2.6s ease-in-out infinite}
+  @keyframes nudge{0%,86%,100%{transform:none}90%{transform:translateY(-3px)}94%{transform:none}}
+  @media (prefers-reduced-motion:reduce){.o-cta{animation:none}}
+  .o-trust{list-style:none;padding:0!important;margin:0 0 10px!important;display:flex;justify-content:center;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;font-weight:700;color:var(--ink)}
+  .o-trust li{display:flex;align-items:center;gap:5px;margin:0!important}
+  .o-trust svg{width:16px;height:16px;fill:none;stroke:var(--teal);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .fine{font-size:12.5px;color:var(--muted);text-align:center;margin:0 0 12px!important;line-height:1.45}
   .cta{display:block;text-align:center;background:var(--yellow);color:var(--ink);font-weight:800;font-size:22px;letter-spacing:.3px;text-decoration:none;border-radius:999px;padding:20px 16px;margin:8px 0 34px;box-shadow:0 3px 0 var(--yellow-d)}
   .cta:active{transform:translateY(2px);box-shadow:0 1px 0 var(--yellow-d)}
 
   .refs{font-size:15px;color:var(--body)}
   .refs p{margin:0 0 14px}
 
-  footer{background:var(--ink);color:#e9e5de;text-align:center;font-size:13.5px;line-height:1.5;padding:34px 20px 40px;margin-top:20px}
+  footer{background:var(--ink);color:#e9e5de;text-align:center;font-size:13.5px;line-height:1.5;padding:34px 20px 120px;margin-top:20px}
   footer p{max-width:600px;margin:0 auto 16px}
   footer .big{font-weight:700;text-transform:uppercase;color:#fff;font-size:14px}
   footer a{color:#e9e5de}
@@ -186,7 +203,7 @@
     <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" font-family="Funnel Sans, system-ui, sans-serif">
       <rect x="0" y="0" width="600" height="360" fill="#FBF8F3"/>
       <line x1="10" y1="96" x2="590" y2="96" stroke="#C0392B" stroke-width="3" stroke-dasharray="10 8"/>
-      <text x="12" y="132" font-size="28" font-weight="800" fill="#C0392B">PANIC LINE</text>
+      <text x="12" y="84" font-size="26" font-weight="800" fill="#C0392B">PANIC LINE</text>
       <g stroke="#B9B2A6" stroke-width="2" stroke-dasharray="4 6">
         <line x1="210" y1="40" x2="210" y2="318"/><line x1="370" y1="40" x2="370" y2="318"/><line x1="530" y1="40" x2="530" y2="318"/>
       </g>
@@ -221,7 +238,7 @@
 
   <p>That's the idea behind the <strong>Roofus Calming Diffuser Kit</strong>. You screw a refill into the diffuser, plug it into the wall in the room where your dog spends his time, and it releases CalmSignal&trade;, a pheromone analogue, around the clock. There's nothing to set, nothing to give at the right minute, and no smell you'll notice.</p>
 
-  <figure><img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700" style="max-width:300px;margin:0 auto"></figure>
+  <figure class="prod"><img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700"></figure>
 
   <p>Appeasing pheromones have been studied for exactly this. In a placebo-controlled study, dogs wearing a dog-appeasing pheromone collar were rated significantly less fearful during recorded thunder than dogs on a placebo.<sup>[3]</sup> In an earlier trial of dogs afraid of fireworks, owners reported improvement in most of the fear signs they tracked after a few weeks of continuous use.<sup>[4]</sup></p>
 
@@ -297,33 +314,38 @@
   <p>Your dog spends his whole life watching your face for cues that everything is OK. When the world gets loud, he can't find that answer on his own. So set the calm up in the room before the noise arrives.</p>
 
   <div class="offer" id="offer">
-    <h2>Today's Launch Offer</h2>
-    <div class="pack">
-      <img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700">
-      <div class="pinfo">
-        <p class="pname">Roofus Calming Diffuser Kit</p>
-        <dl class="specs">
-          <dt>What's inside</dt><dd>1 plug-in diffuser + 2 CalmSignal&trade; refills per room</dd>
-          <dt>How long</dt><dd>About 2 months per kit</dd>
-        </dl>
+    <div class="o-head">
+      <span class="o-eyebrow">Today's Launch Offer</span>
+      <h2>Bring the Calm Home Today</h2>
+    </div>
+    <div class="o-body">
+      <div class="o-stage">
+        <img src="assets/diffuser-loudnights/p-solo.jpg" alt="The Roofus plug-in diffuser with a CalmSignal refill attached" loading="lazy" width="560" height="700">
+        <div class="o-seal" aria-label="60-day money-back guarantee"><b>60</b><span>DAY</span><small>MONEY-BACK</small></div>
       </div>
+      <p class="o-name">Roofus Calming Diffuser Kit</p>
+      <div class="o-specs">
+        <div><span>What's inside</span>1 plug-in diffuser + 2 CalmSignal&trade; refills per room</div>
+        <div><span>How long</span>About 2 months per kit</div>
+      </div>
+      <ul class="usps">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M8.5 12l2.4 2.4L15.5 9.8"/></svg><span>Safe &amp; Drug-Free Relief</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Helps Ease Stress Behaviors</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Round-the-Clock Calm</span></li>
+      </ul>
+      <div class="o-ticket">
+        <p class="t-price">Launch price from <b>$31.49</b></p>
+        <p class="t-save">SAVE UP TO 59%</p>
+      </div>
+      <p class="o-tip"><b>Tip:</b> most homes need 2 rooms, where he hides and where the family spends the day.</p>
+      <a class="cta go o-cta" data-cta="adv-buybox" href="https://get.roofuspet.com/calming-diffuser">CHECK AVAILABILITY &rarr;</a>
+      <ul class="o-trust">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>Secure checkout</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 0 1-13.7 5.6L4 15.3M4 20v-4.7h4.7"/></svg>Skip or cancel anytime</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/></svg>Every penny back</li>
+      </ul>
+      <p class="fine">You'll pick your kit size on the next page. Savings are with Subscribe &amp; Save (up to 59% on the 3-room kit). Not calmer in 60 days? Email us for a full refund.</p>
     </div>
-    <ul class="usps">
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M8.5 12l2.4 2.4L15.5 9.8"/></svg><span>Safe &amp; Drug-Free Relief</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Helps Ease Stress Behaviors</span></li>
-      <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Round-the-Clock Calm</span></li>
-    </ul>
-    <div class="pricebar">
-      <p class="pb-main">Launch price from <b>$31.49</b></p>
-      <p class="pb-save">SAVE UP TO 59%</p>
-    </div>
-    <ul class="trust">
-      <li><b>Most homes need 2 rooms:</b> where he hides, and where the family spends the day.</li>
-      <li>Odorless to people. Just plug it in, nothing to set.</li>
-      <li><b>Not calmer in 60 days?</b> Email us and get every penny back.</li>
-    </ul>
-    <a class="cta go" data-cta="adv-buybox" href="https://get.roofuspet.com/calming-diffuser">CHECK AVAILABILITY &rarr;</a>
-    <p class="fine">You'll pick your kit size on the next page. Savings are with Subscribe &amp; Save (up to 59% on the 3-room kit). Skip or cancel anytime.</p>
   </div>
 
   <p>Plug in now, and the next truck, door or storm arrives in a room that's already calm. Try it for 60 days with launch pricing, and see it on your own dog.</p>

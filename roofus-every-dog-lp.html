@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Roofus Dental Finger Wipes | Clean Teeth in 30 Seconds</title>
-<meta name="description" content="Clean your dog's teeth in 30 seconds. No brush. Made by a vet. Tastes like peanut butter. Buy 2 Get 2 Free.">
+<meta name="description" content="Clean your dog's teeth in 30 seconds. No brush. Tastes like peanut butter. Buy 2 Get 2 Free.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 @font-face{font-family:"Pearl Jean";src:url(assets/brand/Pearl_Jean.ttf) format("truetype");font-display:swap}
 @font-face{font-family:"Helvetica Now Display";src:url(assets/brand/HelveticaNowDisplay-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
@@ -26,7 +26,7 @@ img,video{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 var(--pad)}
 .h{font-family:var(--display);text-transform:uppercase;font-weight:400;line-height:1.02;letter-spacing:.01em;text-align:center}
-.h1{font-size:clamp(34px,9.6vw,64px)}
+.h1{font-size:clamp(32px,9vw,60px);text-wrap:balance}
 .h2{font-size:clamp(30px,8vw,52px)}
 .h .t{color:var(--teal)}
 .eyebrow{font:700 12px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--teal);text-align:center;margin-bottom:10px}
@@ -57,10 +57,11 @@ section{padding:56px 0}
 .vetrow b{font:700 14px/1.15 var(--ui)}
 .vetrow small{font:600 12px/1.2 var(--ui);color:var(--teal)}
 .hero .h1{grid-area:title;max-width:640px}
-.hero-art{grid-area:art;position:relative;margin:12px auto 0;width:100%;max-width:420px;aspect-ratio:1/0.92;overflow:hidden}
+.hero-art{grid-area:art;position:relative;margin:8px auto 0;width:100%;max-width:420px;aspect-ratio:1/0.78;overflow:hidden}
 .hero-art .sun{position:absolute;left:50%;top:30%;width:150%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 30%,#FFE58A 0%,var(--yellow) 38%,#F6C437 70%,#EDB21F 100%)}
-.hero-art .can{position:absolute;left:50%;top:6%;width:57%;transform:translateX(-34%) rotate(-3deg);filter:drop-shadow(0 18px 22px rgba(60,40,0,.28))}
-.badge{position:absolute;left:2%;top:50%;width:84px;height:84px;border-radius:50%;background:var(--teal);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);box-shadow:0 6px 14px rgba(0,0,0,.18);border:3px dashed rgba(255,255,255,.55);text-align:center}
+.canwrap{position:absolute;left:50%;top:12%;width:58%;transform:translateX(-44%)}
+.hero-art .can{display:block;width:100%;transform:rotate(-3deg);filter:drop-shadow(0 18px 22px rgba(60,40,0,.28))}
+.badge{position:absolute;left:-17%;top:-13%;width:78px;height:78px;z-index:2;border-radius:50%;background:var(--teal);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(-12deg);box-shadow:0 6px 14px rgba(0,0,0,.18);border:3px dashed rgba(255,255,255,.55);text-align:center}
 .badge small{font:700 10px/1.1 var(--ui);letter-spacing:.06em;text-transform:uppercase}
 .badge b{font:400 22px/1 var(--display);margin:2px 0}
 .hero-copy{grid-area:copy;width:100%;background:var(--yellow);box-shadow:0 0 0 100vmax var(--yellow);clip-path:inset(0 -100vmax);padding:4px 0 22px;margin-top:-1px}
@@ -69,11 +70,16 @@ section{padding:56px 0}
 .ship{margin:14px auto 0;font:600 14px/1.3 var(--ui);text-align:center}
 .hero-cta{display:none}
 @media(min-width:900px){
-  .hero{padding:20px 0 40px}
+  .hero{padding:20px 0 0}
+  .hero-grid{padding-bottom:44px}
   .hero-grid{grid-template-columns:1.05fr 1fr;grid-template-areas:"proof art" "title art" "copy art";justify-items:start;align-items:center;column-gap:40px}
-  .hero .h1{text-align:left;font-size:60px}
+  .hero .h1{text-align:left;font-size:50px}
   .vetrow{margin:30px 0 16px;align-self:end}
-  .hero-art{grid-row:1/4;max-width:520px;margin:0;border-radius:28px}
+  .hero-art{grid-row:1/4;max-width:520px;margin:0;border-radius:28px;aspect-ratio:1/0.86}
+  .canwrap{top:13%;width:60%}
+  .badge{width:100px;height:100px}
+  .badge b{font-size:28px}
+  .reason .s{min-height:2.1em}
   .hero-copy{background:none;box-shadow:none;clip-path:none;padding:20px 0 0;align-self:start}
   .checks{margin:0}
   .ship{text-align:left;margin:16px 0 0}
@@ -102,7 +108,7 @@ section{padding:56px 0}
 @media(min-width:860px){.how-grid{grid-template-columns:auto 1fr;gap:50px;max-width:900px;margin-left:auto;margin-right:auto}}
 .phone{position:relative;width:min(300px,78vw);margin:0 auto;border-radius:30px;overflow:hidden;border:8px solid var(--ink);background:var(--ink);aspect-ratio:9/16;box-shadow:0 18px 40px rgba(0,0,0,.18)}
 .phone video{width:100%;height:100%;object-fit:cover}
-.sound{position:absolute;right:10px;bottom:10px;background:rgba(26,26,26,.75);color:#fff;border:0;border-radius:999px;padding:8px 12px;font:700 12px/1 var(--ui);cursor:pointer}
+.sound{position:absolute;right:10px;top:10px;background:rgba(26,26,26,.8);color:#fff;border:0;border-radius:999px;padding:14px 16px;font:700 12px/1 var(--ui);cursor:pointer}
 .live{position:absolute;left:10px;top:10px;background:var(--yellow);color:var(--ink);border-radius:4px;padding:5px 8px;font:800 11px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase}
 .steps{list-style:none;display:grid;gap:14px;max-width:440px;margin:0 auto}
 .steps li{display:flex;gap:14px;align-items:center;background:var(--cream);border-radius:14px;padding:12px}
@@ -123,7 +129,7 @@ section{padding:56px 0}
 
 /* carousels */
 .car{position:relative;margin-top:28px}
-.track-x{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 var(--pad) 4px;scroll-padding:0 var(--pad)}
+.track-x{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 var(--pad) 4px;scroll-padding:0 var(--pad);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 .track-x::-webkit-scrollbar{display:none}
 .track-x>*{scroll-snap-align:start;flex:0 0 82%}
 @media(min-width:720px){.track-x>*{flex-basis:calc((100% - 28px)/3)} .track-x{max-width:1120px;margin:0 auto}}
@@ -132,6 +138,11 @@ section{padding:56px 0}
 .arrows button:disabled{opacity:.3}
 .arrows svg{width:18px;height:18px}
 .arrows.hide{display:none}
+@media(min-width:900px){
+  .car .track-x{flex-wrap:wrap;justify-content:center;overflow:visible;scroll-snap-type:none;max-width:1120px;margin:0 auto;padding:0 var(--pad)}
+  .car .track-x>*{flex:0 0 calc((100% - 28px)/3)}
+  .car .arrows{display:none}
+}
 
 /* reasons */
 .reason{background:var(--white);border-radius:var(--r);padding:12px 12px 22px;border:1px solid var(--line)}
@@ -157,8 +168,11 @@ section{padding:56px 0}
 .stack li{display:flex;gap:7px}
 .stack li::before{content:"";flex:0 0 9px;height:9px;border-radius:50%;background:var(--teal);margin-top:6px}
 .stack p{font-size:15px;color:var(--ink-2)}
-.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px;text-align:center;font:600 14px/1.25 var(--ui)}
-.trust svg{width:30px;height:30px;margin:0 auto 6px;color:var(--teal)}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:26px auto 0;text-align:center;font:700 14px/1.25 var(--ui)}
+.trust>div{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:8px;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:14px 6px}
+.trust .ti{width:54px;height:54px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;border:2px solid var(--ink)}
+.trust svg{display:block;width:28px;height:28px;color:var(--ink)}
+.trust .ti-num{font:800 26px/1 var(--ui);color:var(--ink)}
 .link{display:block;text-align:center;margin-top:8px;padding:14px 0;font:700 14px/1 var(--ui);text-decoration:underline;text-underline-offset:3px}
 
 /* dogs */
@@ -178,10 +192,29 @@ section{padding:56px 0}
 .brackets b{display:block;font:400 30px/1 var(--display)}
 .brackets small{font:700 12px/1.2 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .test{background:var(--white);border-radius:var(--r);padding:12px;border:1px solid var(--line)}
-.test img{border-radius:12px;aspect-ratio:1/0.8;object-fit:cover;width:100%}
+.test{padding:18px 14px}
+.test .tnum{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--yellow);border:2px solid var(--ink);font:400 26px/1 var(--display);margin:0 4px}
 .test .when{display:inline-block;margin:14px 4px 8px;background:var(--mint);color:var(--teal);font:800 12px/1 var(--ui);letter-spacing:.08em;padding:6px 8px;border-radius:4px;text-transform:uppercase}
 .test h3{font:700 19px/1.2 var(--ui);margin:0 4px 6px}
 .test p{font-size:16px;color:var(--ink-2);margin:0 4px 6px}
+
+/* 60-day timeline */
+.tl{list-style:none;position:relative;max-width:560px;margin:30px auto 0;display:grid;gap:16px}
+.tl::before{content:"";position:absolute;left:44px;top:20px;bottom:20px;width:4px;border-radius:2px;background:repeating-linear-gradient(var(--teal) 0 10px,transparent 10px 16px)}
+.tl li{position:relative;display:flex;gap:14px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:10px 14px 10px 10px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.tl img,.tl-seal{flex:0 0 72px;width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--teal);background:#fff;position:relative;z-index:1}
+.tl-seal{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--yellow);border:3px dashed var(--teal);transform:rotate(-8deg)}
+.tl-seal b{font:400 28px/1 var(--display)}
+.tl-seal span{font:800 9px/1.05 var(--ui);text-transform:uppercase;text-align:center;letter-spacing:.04em}
+.tl .when{display:inline-block;background:var(--mint);color:var(--teal);font:800 12px/1 var(--ui);letter-spacing:.08em;padding:5px 7px;border-radius:4px;text-transform:uppercase}
+.tl h3{font:700 19px/1.2 var(--ui);margin:6px 0 3px}
+.tl p{font-size:15px;color:var(--ink-2)}
+@media(min-width:960px){
+  .tl{max-width:1080px;grid-template-columns:repeat(4,1fr);gap:18px}
+  .tl::before{left:12%;right:12%;top:62px;bottom:auto;width:auto;height:4px;background:repeating-linear-gradient(90deg,var(--teal) 0 10px,transparent 10px 16px)}
+  .tl li{flex-direction:column;text-align:center;padding:16px 14px 20px}
+  .tl img,.tl-seal{flex-basis:96px;width:96px;height:96px}
+}
 
 /* honest */
 .honest{background:var(--cream-2)}
@@ -189,6 +222,33 @@ section{padding:56px 0}
 .quote h3{font:700 20px/1.22 var(--ui);margin-bottom:10px}
 .quote p{font-size:16px;color:var(--ink-2)}
 .quote .who{margin-top:auto;padding-top:16px;font:700 12px/1 var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--teal)}
+
+/* tooth diagram */
+.tooth{position:relative;max-width:560px;margin:26px auto 0;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:16px 12px 12px}
+.tooth svg{display:block;width:100%;max-width:340px;margin:0 0 0 auto}
+.tooth .tag-soft,.tooth .tag-hard{position:absolute;left:16px;max-width:38%;font:500 13px/1.3 var(--ui);color:var(--ink-2)}
+.tooth b{display:block;font:800 14px/1.2 var(--ui);text-transform:uppercase;letter-spacing:.04em}
+.tooth .tag-soft{top:12px}.tooth .tag-soft b{color:var(--teal)}
+.tooth .tag-hard{top:46%}.tooth .tag-hard b{color:#9A6A2E}
+@media(max-width:420px){.tooth svg{max-width:58%}.tooth .tag-soft,.tooth .tag-hard{max-width:42%}}
+/* can / can't */
+.cc{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:560px;margin:14px auto 0}
+.cc-col{border-radius:16px;padding:14px 12px}
+.cc-col h3{display:flex;align-items:center;gap:8px;font:400 20px/1 var(--display);text-transform:uppercase;margin-bottom:10px}
+.cc-col ul{list-style:none;display:grid;gap:8px;font:600 14px/1.3 var(--ui)}
+.cc-col li{padding-left:12px;border-left:3px solid currentColor}
+.can{background:var(--mint);color:var(--teal)}.can li{color:var(--ink)}.can li{border-color:var(--teal)}
+.cant{background:#F7E9E4;color:#B5483B}.cant li{color:var(--ink);border-color:#E3A196}
+.xk{flex:0 0 22px;height:22px;border-radius:50%;background:#B5483B;display:grid;place-items:center}
+.xk svg{width:11px;height:11px}
+/* 3-night stepper */
+.nights{max-width:560px;margin:14px auto 0;background:var(--ink);color:#fff;border-radius:16px;padding:16px 12px}
+.nights-h{text-align:center;font:400 20px/1 var(--display);text-transform:uppercase;color:var(--yellow);margin-bottom:12px}
+.nights ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;counter-reset:n}
+.nights li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;font:500 13px/1.3 var(--ui);color:#E3DED6}
+.nights li b{font:800 13px/1 var(--ui);color:#fff;text-transform:uppercase;letter-spacing:.06em}
+.ni{width:46px;height:46px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;color:var(--ink);font:400 26px/1 var(--display)}
+.ni svg{width:24px;height:24px}
 
 /* ingredients */
 .ingr{background:radial-gradient(120% 70% at 50% 0%,#FFE9A3 0%,var(--yellow) 45%,#F0BE2E 100%)}
@@ -198,8 +258,11 @@ section{padding:56px 0}
 .ing .dose{display:inline-block;margin:-12px auto 0;position:relative;background:var(--ink);color:#fff;font:700 12px/1 var(--ui);letter-spacing:.05em;padding:6px 9px;border-radius:999px;text-transform:uppercase}
 .ing h3{font:400 22px/1.05 var(--display);text-transform:uppercase;margin:12px 0 6px}
 .ing p{font-size:15px}
-.ingr .track-x>*{flex-basis:46%}
-@media(min-width:720px){.ingr .track-x>*{flex-basis:calc((100% - 70px)/6)}}
+.ingr .track-x{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;overflow:visible;padding:0 var(--pad)}
+.ingr .track-x>*{flex:none}
+@media(min-width:720px){.ingr .track-x{grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto}}
+@media(min-width:1100px){.ingr .track-x{grid-template-columns:repeat(6,1fr);max-width:1120px}}
+@media(min-width:900px){.ingr .car .track-x{display:grid;padding:0 var(--pad)}.ingr .car .track-x>*{flex:none}}
 .never{margin:26px auto 0;max-width:560px;background:var(--ink);color:#fff;border-radius:12px;padding:14px 16px;text-align:center;font:600 15px/1.4 var(--ui)}
 .never b{color:var(--yellow);letter-spacing:.08em;text-transform:uppercase;font-size:12px;display:block;margin-bottom:4px}
 
@@ -207,7 +270,7 @@ section{padding:56px 0}
 .cmp{margin:28px auto 0;max-width:760px}
 .cmp table{width:100%;border-collapse:separate;border-spacing:0;font:500 14px/1.25 var(--ui)}
 .cmp th,.cmp td{padding:12px 5px;text-align:center;border-bottom:1px solid var(--line);vertical-align:middle}
-.cmp th:first-child,.cmp td:first-child{text-align:left;font:700 12px/1.25 var(--ui);letter-spacing:.04em;text-transform:uppercase;width:26%;padding-left:2px}
+.cmp th:first-child,.cmp td:first-child{text-align:left;font:700 13px/1.25 var(--ui);letter-spacing:.02em;width:24%;padding-left:2px}
 .cmp thead th{border-bottom:0;font:600 13px/1.2 var(--ui);padding-top:16px}
 .cmp .us{background:var(--yellow);font-weight:700}
 .cmp thead .us{border-radius:14px 14px 0 0}
@@ -245,47 +308,179 @@ footer p{max-width:620px;margin:0 auto 10px}
 
 /* sticky cta */
 .sticky{position:fixed;left:0;right:0;bottom:0;z-index:45;padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom));background:linear-gradient(to top,var(--cream) 70%,rgba(243,237,228,0))}
+.sticky{transition:transform .25s ease,opacity .25s ease}
+.sticky.off{transform:translateY(110%);opacity:0;pointer-events:none}
 .sticky .btn{max-width:520px;margin:0 auto;display:flex}
 @media(min-width:900px){.sticky{display:none} body{padding-bottom:0}}
+
+/* hero offer coupon */
+.offer{position:relative;max-width:440px;margin:18px auto 0;background:var(--white);border:2px dashed var(--teal);border-radius:16px;padding:14px 16px 16px;text-align:center;box-shadow:0 6px 18px rgba(16,132,116,.12)}
+.offer::before,.offer::after{content:"";position:absolute;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:50%;background:var(--yellow);border:2px dashed var(--teal)}
+.offer::before{left:-13px;clip-path:inset(0 0 0 50%)}.offer::after{right:-13px;clip-path:inset(0 50% 0 0)}
+.o-title{font:400 26px/1 var(--display);text-transform:uppercase}
+.o-title span{color:#fff;background:var(--teal);padding:2px 8px 0;border-radius:6px;margin-left:2px}
+.o-cans{display:flex;align-items:flex-end;justify-content:center;gap:6px;margin:14px 0 12px}
+.oc{position:relative;width:56px}
+.oc img{width:100%;display:block;filter:drop-shadow(0 4px 5px rgba(0,0,0,.18))}
+.oc.free i{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%) rotate(-6deg);background:var(--teal);color:#fff;font:800 11px/1 var(--ui);font-style:normal;letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,.2)}
+.o-plus{font:400 30px/1 var(--display);color:var(--teal);align-self:center;margin:0 4px}
+.o-perks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.op{display:flex;align-items:center;justify-content:center;gap:7px;background:var(--cream);border-radius:10px;padding:8px 6px;font:800 14px/1.1 var(--ui);white-space:nowrap}
+.opi{flex:0 0 30px;height:30px;border-radius:50%;background:var(--yellow);border:2px solid var(--ink);display:grid;place-items:center}
+.opi svg{width:18px;height:18px;color:var(--ink)}
+@media(min-width:900px){.offer{margin:20px 0 0}.offer::before{background:var(--cream)}.offer::after{background:var(--cream)}}
+
+/* hero offer line (old) */
+.offer{max-width:440px;margin:16px auto 0;background:var(--white);border:2px solid var(--ink);border-radius:12px;padding:10px 14px;text-align:center;display:flex;flex-direction:column;gap:3px}
+.offer b{font:400 20px/1 var(--display);text-transform:uppercase;color:var(--teal)}
+.oprice{display:flex;align-items:baseline;justify-content:center;gap:8px;margin-top:4px}
+.oprice strong{font:400 40px/1 var(--display)}
+.oprice span{font:700 17px/1 var(--ui)}
+.operks{display:flex;justify-content:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.operks>span{display:inline-flex;align-items:center;gap:6px;background:var(--mint);border-radius:999px;padding:6px 10px 6px 6px;font:700 14px/1 var(--ui)}
+.operks .ck{flex:0 0 18px;height:18px;margin:0}
+.operks .ck svg{width:10px;height:10px}
+@media(min-width:900px){.offer{margin:18px 0 0;text-align:left}.oprice,.operks{justify-content:flex-start}}
+
+/* read progress */
+.prog{position:fixed;left:0;top:0;height:4px;width:100%;z-index:50;transform-origin:0 50%;transform:scaleX(0);background:var(--teal)}
+/* scroll reveal (only when JS runs) */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
+/* hero proof stack */
+.proofrow{grid-area:proof;display:flex;align-items:center;gap:10px;margin:14px 0 16px;text-decoration:none;color:var(--ink)}
+.stack-av{display:flex}
+.stack-av img{width:40px;height:40px;border-radius:50%;border:2px solid var(--cream);object-fit:cover;margin-left:-10px;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+.stack-av img:first-child{margin-left:0}
+.proofrow .txt{display:flex;flex-direction:column;line-height:1.15}
+.proofrow b{font:700 14px/1.2 var(--ui)}
+.proofrow small{font:600 13px/1.2 var(--ui);color:var(--teal);text-decoration:underline;text-underline-offset:2px}
+.cue{display:flex;flex-direction:column;align-items:center;gap:4px;width:max-content;margin:16px auto 0;font:700 14px/1.2 var(--ui);text-decoration:none;color:var(--ink)}
+.cue svg{width:22px;height:22px;animation:bob 1.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(5px)}}
+@media(min-width:900px){.cue{margin-left:0}}
+.next{display:block;text-align:center;margin-top:16px;padding:12px 0;font:700 15px/1.3 var(--ui);color:var(--teal);text-decoration:none}
+.next span{text-decoration:underline;text-underline-offset:3px}
+/* breath check */
+.check{background:var(--mint)}
+.quiz{max-width:520px;margin:24px auto 0;background:var(--white);border:1px solid var(--line);border-radius:20px;padding:20px 18px;box-shadow:0 8px 24px rgba(16,132,116,.08)}
+.qbar{display:flex;gap:6px;margin-bottom:16px}
+.qbar i{flex:1;height:6px;border-radius:3px;background:var(--line)}
+.qbar i.on{background:var(--teal)}
+.qq{font:700 20px/1.3 var(--ui);text-align:center;min-height:52px}
+.qbtns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.qbtns button{font:800 17px/1 var(--ui);padding:16px;border-radius:10px;border:2px solid var(--ink);background:var(--white);cursor:pointer;text-transform:uppercase}
+.qbtns button:first-child{background:var(--yellow)}
+.qres{display:none;text-align:center}
+.qres b{display:block;font:400 26px/1.05 var(--display);text-transform:uppercase;color:var(--teal);margin-bottom:8px}
+.qres p{font-size:17px;color:var(--ink-2)}
+.qres small{display:block;margin-top:10px;font:500 12px/1.3 var(--ui);color:var(--muted)}
+.quiz.done .qq,.quiz.done .qbtns,.quiz.done .qbar{display:none}
+.quiz.done .qres{display:block}
+/* owner video wall */
+.wall{background:var(--ink);color:#fff}
+.wall .h2{color:#fff}.wall .lede{color:#D9D4CC}
+.wall .track-x>*{flex-basis:64%}
+@media(min-width:720px){.wall .track-x>*{flex-basis:calc((100% - 28px)/3)}}
+.clip{position:relative;border-radius:22px;overflow:hidden;background:#000;aspect-ratio:9/16;border:3px solid #333}
+.clip video{width:100%;height:100%;object-fit:cover}
+.clip .tag{position:absolute;left:10px;bottom:10px;right:10px;background:rgba(26,26,26,.8);border-radius:10px;padding:8px 10px;font:600 13px/1.25 var(--ui)}
+.clip .tag b{display:block;color:var(--yellow);font:800 11px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;margin-bottom:3px}
+.wall .arrows button{border-color:#fff;color:#fff}
+.wall .guar{color:#fff}
+.disc{margin:18px auto 0;max-width:560px;text-align:center;font:500 12px/1.4 var(--ui);color:#A9A29A}
+/* never inside */
+.never-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:620px;margin:28px auto 0}
+.nv{background:var(--ink);color:#fff;border-radius:14px;padding:14px 2px 12px;text-align:center;font:700 12px/1.2 var(--ui);display:flex;flex-direction:column;align-items:center}
+.nv .ic{display:block;position:relative;width:44px;height:44px;margin:2px auto 10px}
+.nv .ic svg{display:block;width:44px;height:44px;padding:4px}
+.nv .ic::after{content:"";position:absolute;inset:-2px;border:3px solid #E5484D;border-radius:50%;background:linear-gradient(135deg,transparent 48%,rgba(229,72,77,.9) 48%,rgba(229,72,77,.9) 52%,transparent 52%)}
+.never-h{text-align:center;margin-top:28px;font:800 13px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase}
+/* compare thumbs */
+.cmp thead th .th-img{width:56px;height:56px;border-radius:50%;object-fit:cover;margin:0 auto 6px;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.12);background:#fff}
+.cmp thead .us .th-img{object-fit:contain;padding:3px}
+
+/* closing kit */
+.kit{background:var(--yellow)}
+.kitbox{max-width:460px;margin:24px auto 0;background:var(--white);border:2px solid var(--ink);border-radius:22px;padding:20px 18px 22px;box-shadow:0 6px 0 var(--ink);text-align:center}
+.kitcan{width:150px;margin:-6px auto 6px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.18))}
+.kitlist{list-style:none;text-align:left;display:grid;gap:0;margin-top:6px}
+.kitlist li{display:flex;justify-content:space-between;gap:12px;padding:12px 2px;border-bottom:1px dashed var(--line);font-size:16px}
+.kitlist b{font:800 15px/1.2 var(--ui);color:var(--teal);white-space:nowrap;align-self:center}
+.kitlist .kl{display:flex;flex-direction:column;gap:3px}
+.kitlist .kl strong{font:800 17px/1.2 var(--ui)}
+.kitlist .kl small{font:500 14px/1.2 var(--ui);color:var(--muted)}
+.kitlist s,.kittotal s{color:var(--muted);font-weight:600;margin-right:4px}
+.kittotal{display:flex;align-items:baseline;justify-content:center;gap:10px;margin:16px 0 14px;flex-wrap:wrap}
+.kittotal span{font:700 14px/1 var(--ui);text-transform:uppercase;letter-spacing:.08em}
+.kittotal b{font:400 34px/1 var(--display)}
+.kittotal em{font:800 13px/1 var(--ui);font-style:normal;background:var(--teal);color:#fff;padding:6px 8px;border-radius:999px}
+.kitbox .btn{max-width:none}
+.perclean{display:flex;align-items:baseline;justify-content:center;gap:8px;margin-top:4px}
+.perclean strong{font:400 46px/1 var(--display);color:var(--teal)}
+.perclean span{font:800 18px/1 var(--ui)}
+.pcnote{margin:6px 0 4px;font:600 15px/1.35 var(--ui);color:var(--ink-2)}
+.kittotal b{font-size:26px!important}
+.kitnote{margin-top:12px;font:600 14px/1.3 var(--ui);color:var(--ink-2)}
+
+/* receipt buy box */
+.receipt{--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;position:relative;max-width:400px;margin:26px auto 0;background:#fff;padding:24px 22px 26px;font:500 15px/1.35 var(--mono);color:var(--ink);box-shadow:0 14px 30px rgba(60,40,0,.18);transform:rotate(-1deg);
+  -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16px 100%,conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/16px 100%;
+  -webkit-mask-composite:source-in;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/16px 100% intersect,conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/16px 100%}
+.r-head{display:flex;flex-direction:column;align-items:center;gap:6px;padding:6px 0 14px;border-bottom:2px dashed var(--ink)}
+.r-head img{height:20px;width:auto}
+.r-head span{font:600 13px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase}
+.r-lines{list-style:none;padding:10px 0;border-bottom:2px dashed var(--ink)}
+.r-lines li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7px 0}
+.r-lines li span{display:flex;flex-direction:column}
+.r-lines small{font:500 12px/1.3 var(--mono);color:var(--muted);margin-top:2px}
+.r-lines b{font-weight:700;white-space:nowrap}
+.r-disc{color:var(--teal)}
+.r-total{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0 4px;font:700 22px/1 var(--mono);text-transform:uppercase}
+.r-save{text-align:right;font:600 14px/1 var(--mono);color:var(--teal)}
+.r-per{margin:18px auto 4px;padding:12px 10px;border:2.5px solid var(--teal);border-radius:12px;text-align:center;transform:rotate(-2deg);display:flex;flex-direction:column;gap:4px;max-width:270px}
+.r-per span{font:600 13px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.r-per strong{font:400 40px/1 var(--display);color:var(--teal);text-transform:uppercase}
+.r-per em{font:700 16px/1 var(--mono);font-style:normal;color:var(--teal);text-transform:uppercase;letter-spacing:.08em}
+.r-per small{font:500 12px/1 var(--mono);color:var(--muted)}
+.r-bar{height:34px;margin:18px 10px 0;background:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 4px,var(--ink) 4px 5px,transparent 5px 8px,var(--ink) 8px 11px,transparent 11px 13px)}
 
 /* deal toast */
 .toast{position:fixed;left:50%;top:70px;z-index:55;transform:translate(-50%,-20px);opacity:0;pointer-events:none;background:var(--teal);color:#fff;font:700 14px/1.2 var(--ui);padding:12px 16px;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.2);transition:all .3s;white-space:nowrap}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 
-/* popup */
-.pop{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;background:rgba(26,26,26,.55);padding:16px}
-.pop.on{display:flex}
-.pop .card{position:relative;width:100%;max-width:360px;max-height:calc(100vh - 32px);border-radius:20px;overflow:hidden;background:var(--ink) url(assets/every-dog/reason-golden.jpg) center 30%/cover;display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 22px 18px;color:#fff;box-shadow:0 20px 50px rgba(0,0,0,.35);animation:popin .25s ease-out}
-@keyframes popin{from{transform:translateY(16px);opacity:0}to{transform:none;opacity:1}}
-.pop .card::before{content:"";position:absolute;inset:0;background:rgba(26,26,26,.72)}
-.pop .card>*{position:relative}
-.pop .x{position:absolute;top:10px;left:10px;width:44px;height:44px;border:0;background:transparent;color:#fff;font-size:28px;cursor:pointer}
-.pop img.lg{height:20px;width:auto;filter:invert(1);margin-bottom:18px}
-.pop h2{font:400 clamp(32px,10vw,44px)/1 var(--display);text-transform:uppercase}
-.pop h2 span{color:var(--yellow)}
-.pop p{margin-top:10px;font:600 15px/1.35 var(--ui)}
-.pop .btn{margin-top:20px;box-shadow:none;border-color:var(--yellow);cursor:pointer}
-.pop .nope{margin-top:4px;padding:16px 18px;min-height:46px;background:none;border:0;color:#fff;font:600 14px/1 var(--ui);text-decoration:underline;cursor:pointer;text-transform:uppercase;letter-spacing:.04em}
+/* offer card: slides up, never covers the page */
+.pop{position:fixed;left:12px;right:12px;bottom:calc(86px + env(safe-area-inset-bottom));z-index:46;max-width:420px;margin:0 auto;display:flex;gap:12px;align-items:center;background:var(--ink);color:#fff;border-radius:16px;padding:12px 40px 12px 12px;box-shadow:0 12px 30px rgba(0,0,0,.3);transform:translateY(140%);opacity:0;pointer-events:none;transition:transform .35s ease,opacity .35s ease}
+.pop.on{transform:none;opacity:1;pointer-events:auto}
+.pop-img{flex:0 0 60px;width:60px;height:60px;border-radius:12px;object-fit:cover;border:2px solid var(--yellow)}
+.pop-body{display:flex;flex-direction:column;gap:3px;min-width:0}
+.pop-body b{font:400 20px/1.05 var(--display);text-transform:uppercase;color:var(--yellow)}
+.pop-body span{font:500 14px/1.3 var(--ui);color:#E3DED6}
+.pop-actions{display:flex;gap:8px;margin-top:6px}
+.pop-yes{background:var(--yellow);color:var(--ink);border:0;border-radius:8px;padding:11px 14px;font:800 14px/1 var(--ui);cursor:pointer}
+.pop-no{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:8px;padding:11px 12px;font:600 14px/1 var(--ui);cursor:pointer}
+.pop-x{position:absolute;top:4px;right:4px;width:40px;height:40px;border:0;background:transparent;color:#fff;font-size:24px;cursor:pointer}
+@media(min-width:900px){.pop{left:24px;right:auto;bottom:24px;margin:0;width:380px}}
 </style>
 </head>
 <body>
 
 <!-- 0. ENTRY OFFER POPUP -->
-<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="popH">
-  <div class="card">
-    <button class="x" type="button" aria-label="Close" data-close>&times;</button>
-    <img class="lg" src="assets/every-dog/logo.svg" alt="Roofus">
-    <h2 id="popH">Want 2 cans <span>free?</span></h2>
-    <p>Buy 2, get 2 free, plus a free gift.<br>Keep reading to see why.</p>
-    <button class="btn" type="button" id="popYes">Yes please!</button>
-    <button class="nope" type="button" data-close>No thank you</button>
+<div class="pop" id="pop" role="region" aria-label="Offer">
+  <img class="pop-img" src="assets/every-dog/av-3.jpg" alt="">
+  <div class="pop-body">
+    <b>Want 2 cans free?</b>
+    <span>Buy 2, get 2 more free, plus a gift.</span>
+    <div class="pop-actions"><button class="pop-yes" type="button" id="popYes">Yes please</button><button class="pop-no" type="button" data-close>No thanks</button></div>
   </div>
+  <button class="pop-x" type="button" aria-label="Close" data-close>&times;</button>
 </div>
 
 <!-- 1. STICKY OFFER BAR -->
 <div class="topbar">
   <div class="wrap">
-    <span class="pill">Buy 2 Get 2 Free + Gift</span>
+    <span class="pill">Deal ends in</span>
     <div class="timer" aria-label="Today's price ends in">
       <div class="u"><b id="tH">00</b><small>HRS</small></div><i>:</i>
       <div class="u"><b id="tM">00</b><small>MIN</small></div><i>:</i>
@@ -298,60 +493,110 @@ footer p{max-width:620px;margin:0 auto 10px}
 <header class="hero">
   <div class="logo-bar"><img src="assets/every-dog/logo.svg" alt="Roofus"></div>
   <div class="wrap hero-grid">
-    <div class="vetrow">
-      <span class="av"><img src="assets/every-dog/vet-leibman.jpg" alt="" onerror="this.remove()">NL</span>
-      <span class="txt"><b>Made by a vet</b><small>Dr. Nicole Leibman, DVM</small></span>
-    </div>
-    <h1 class="h h1"><span class="t">Clean dog teeth</span><br>in 30 seconds.<br>No brush.</h1>
+    <a class="proofrow" href="#how">
+      <span class="stack-av"><img src="assets/every-dog/av-1.jpg" alt=""><img src="assets/every-dog/av-2.jpg" alt=""><img src="assets/every-dog/av-3.jpg" alt=""><img src="assets/every-dog/av-4.jpg" alt=""></span>
+      <span class="txt"><b>Dog owners use it at home</b><small>Watch their videos</small></span>
+    </a>
+    <h1 class="h h1">Clean your dog's teeth <span class="t">in 30 seconds</span>, without a brush</h1>
     <div class="hero-art">
       <div class="sun"></div>
-      <img class="can" src="assets/every-dog/canister-pb.png" alt="Roofus Dental Finger Wipes, Peanut Butter, 60 wipes">
-      <div class="badge"><small>Buy 2</small><b>Get 2</b><small>Free</small></div>
+      <div class="canwrap"><img class="can" src="assets/every-dog/canister-pb.png" alt="Roofus Dental Finger Wipes, Peanut Butter, 60 wipes"><div class="badge"><small>Save</small><b>56%</b><small>today</small></div></div>
     </div>
     <div class="hero-copy">
       <ul class="checks">
-        <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Slides on your finger. No brush. No fight.</li>
+        <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Slides on your finger like a sleeve.</li>
         <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Tastes like peanut butter.</li>
-        <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Safe if your dog licks it. Love it or get your money back for 60 days.</li>
+        <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Gentle on puppies and senior dogs.</li>
       </ul>
-      <div class="hero-cta"><a class="btn" data-cta="hero" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-      <p class="ship">Selling fast. New orders ship Thursday, Oct 29.</p>
+      <div class="offer">
+        <div class="o-title">Buy 2, get 2 <span>free</span></div>
+        <div class="o-cans" aria-label="2 cans you buy plus 2 free cans">
+          <span class="oc"><img src="assets/every-dog/canister-pb.png" alt=""></span><span class="oc"><img src="assets/every-dog/canister-pb.png" alt=""></span>
+          <span class="o-plus">+</span>
+          <span class="oc free"><img src="assets/every-dog/canister-pb.png" alt=""><i>Free</i></span><span class="oc free"><img src="assets/every-dog/canister-pb.png" alt=""><i>Free</i></span>
+        </div>
+        <div class="o-perks"><div class="op"><span class="opi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="5" rx="1"/><path d="M5 13v8h14v-8M12 8v13M12 8c-1.5-3-6-3.5-6-1s4 1 6 1zm0 0c1.5-3 6-3.5 6-1s-4 1-6 1z"/></svg></span>Free gift</div><div class="op"><span class="opi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6" cy="17.5" r="2"/><circle cx="18" cy="17.5" r="2"/></svg></span>Free shipping</div></div>
+      </div>
+      <div class="hero-cta"><a class="btn" data-cta="hero" href="https://get.roofuspet.com/">Claim my 2 free cans<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <a class="cue" href="#how">See how it works<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
     </div>
   </div>
   <div class="marquee" aria-hidden="true"><div class="track">
-    <span>Fresh breath</span><span>No brush</span><span>No fight</span><span>Peanut butter taste</span><span>No alcohol</span><span>No xylitol</span><span>30 seconds</span><span>Made by a vet</span>
-    <span>Fresh breath</span><span>No brush</span><span>No fight</span><span>Peanut butter taste</span><span>No alcohol</span><span>No xylitol</span><span>30 seconds</span><span>Made by a vet</span>
+    <span>Fresh breath</span><span>Peanut butter taste</span><span>Plant-based</span><span>Gentle on gums</span><span>Puppies to seniors</span><span>Easy every week</span>
+    <span>Fresh breath</span><span>Peanut butter taste</span><span>Plant-based</span><span>Gentle on gums</span><span>Puppies to seniors</span><span>Easy every week</span>
   </div></div>
 </header>
 
 <!-- 2b. SEE IT (real customer video) -->
 <section class="how" id="how">
   <div class="wrap">
-    <h2 class="h h2">See how easy<br><span class="t">it really is</span></h2>
-    <p class="lede">A real dog owner. A real dog. One wipe.</p>
+    <h2 class="h h2 rv">Here's what<br><span class="t">it looks like</span></h2>
+    <p class="lede">A dog owner doing the routine at home.</p>
     <div class="how-grid">
       <div class="phone">
         <video id="vid" src="assets/ugc1.mp4" poster="assets/every-dog/ugc1-poster.jpg" muted loop playsinline preload="none" aria-label="Dog owner cleaning their dog's teeth with a Roofus wipe"></video>
-        <span class="live">Real customer</span>
+        <span class="live">Dog owner video</span>
         <button class="sound" type="button" id="snd">Tap for sound</button>
       </div>
       <ol class="steps">
         <li><img src="assets/every-dog/reason-glove.jpg" alt="Wipe on a finger" loading="lazy"><div><span class="num">Step 1</span><b>Slide it on</b><span>Put the wipe on your finger.</span></div></li>
-        <li><img src="assets/every-dog/reason-golden.jpg" alt="Wiping a dog's teeth" loading="lazy"><div><span class="num">Step 2</span><b>Rub the teeth</b><span>Bumpy side scrubs. Smooth side cleans the gums.</span></div></li>
-        <li><img src="assets/every-dog/canister-3.jpg" alt="Roofus canister" loading="lazy"><div><span class="num">Step 3</span><b>Toss it</b><span>That's it. 30 seconds, 2 or 3 times a week.</span></div></li>
+        <li><img src="assets/every-dog/reason-golden.jpg" alt="Wiping a dog's teeth" loading="lazy"><div><span class="num">Step 2</span><b>Rub the teeth</b><span>Scrub, then flip it and wipe the gums.</span></div></li>
+        <li><img src="assets/every-dog/canister-3.jpg" alt="Roofus canister" loading="lazy"><div><span class="num">Step 3</span><b>Toss it</b><span>Throw the wipe away when you're done.</span></div></li>
       </ol>
     </div>
+    <a class="next" href="#why">Next: <span>what a vet cleaning costs</span> ↓</a>
   </div>
 </section>
 
 <!-- 2c. WHY IT MATTERS (sourced stats) -->
 <section class="stats" id="why">
   <div class="wrap">
-    <h2 class="h h2">Why 30 seconds<br><span style="color:var(--yellow)">matters</span></h2>
+    <h2 class="h h2 rv">Why it's worth<br><span style="color:var(--yellow)">starting now</span></h2>
     <div class="stat-grid">
-      <div class="stat"><b>4 in 5</b><p>dogs over age 3 have tooth and gum disease.</p><small>Source: VCA Animal Hospitals</small></div>
-      <div class="stat"><b>$388</b><p>is the average cost of a vet teeth cleaning.</p><small>Source: CareCredit, 2025</small></div>
-      <div class="stat"><b>24 hrs</b><p>is how fast soft plaque starts to turn hard.</p><small>Source: VCA Animal Hospitals</small></div>
+      <div class="stat rv"><b>4 in 5</b><p>dogs over age 3 have dental disease.</p><small>Source: VCA Animal Hospitals</small></div>
+      <div class="stat rv"><b>$388</b><p>is the average cost of a vet teeth cleaning.</p><small>Source: CareCredit, 2025</small></div>
+      <div class="stat rv"><b>24 hrs</b><p>is how fast soft plaque starts to turn hard.</p><small>Source: VCA Animal Hospitals</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. REAL OWNERS (proof slot) -->
+<section class="wall" id="owners">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--yellow)">Customer videos</p>
+    <h2 class="h h2 rv">See it on<br><span style="color:var(--yellow)">other people's dogs</span></h2>
+    <p class="lede">These owners filmed themselves using Roofus at home.</p>
+  </div>
+  <div class="car rv" data-car>
+    <div class="track-x">
+      <article class="clip"><video data-auto src="assets/vid-couch.mp4" poster="assets/poster-couch.jpg" muted loop playsinline preload="none" aria-label="Owner cleaning her dog's teeth on the couch"></video><div class="tag"><b>On the couch</b>Her dog just lies there and lets her do it.</div></article>
+      <article class="clip"><video data-auto src="assets/vid-outdoor.mp4" poster="assets/poster-outdoor.jpg" muted loop playsinline preload="none" aria-label="Owner wiping a dog's teeth in the backyard"></video><div class="tag"><b>In the backyard</b>A quick clean on a sunny afternoon.</div></article>
+      <article class="clip"><video data-auto src="assets/vid-owner.mp4" poster="assets/poster-owner.jpg" muted loop playsinline preload="none" aria-label="Owner showing the Roofus wipe and canister"></video><div class="tag"><b>First try</b>He shows the wipe, then cleans his dog's teeth.</div></article>
+    </div>
+    <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  </div>
+  <div class="wrap">
+    <p class="disc">Some of these owners were sent Roofus to try. Results vary by dog.</p>
+    <div class="cta-block"><a class="btn" data-cta="owners" href="https://get.roofuspet.com/">Get the 4-can deal<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>Love it or your money back</div></div>
+  </div>
+</section>
+
+<!-- 2d. BREATH CHECK (engagement) -->
+<section class="check" id="check">
+  <div class="wrap">
+    <p class="eyebrow">Quick check</p>
+    <h2 class="h h2 rv">Does your dog<br><span class="t">need this?</span></h2>
+    <div class="quiz rv" id="quiz">
+      <div class="qbar"><i class="on"></i><i></i><i></i></div>
+      <p class="qq" id="qq">Is your dog 3 years old or older?</p>
+      <div class="qbtns"><button type="button" data-a="1">Yes</button><button type="button" data-a="0">No</button></div>
+      <div class="qres">
+        <b id="qrH">Your dog is a great fit</b>
+        <p id="qrP">A 30-second wipe, 2 or 3 times a week, is an easy way to keep plaque off. Here are 5 reasons owners pick Roofus.</p>
+        <a class="next" href="#reasons" style="margin-top:14px">See the 5 reasons <span>↓</span></a>
+        <small>This is not a vet exam. If your dog has sore gums or brown tartar, see your vet.</small>
+      </div>
     </div>
   </div>
 </section>
@@ -359,221 +604,202 @@ footer p{max-width:620px;margin:0 auto 10px}
 <!-- 3. FIVE REASONS -->
 <section id="reasons">
   <div class="wrap">
-    <h2 class="h h2">5 reasons dog owners<br><span class="t">pick Roofus</span></h2>
+    <h2 class="h h2 rv">Why owners<br><span class="t">switch to Roofus</span></h2>
   </div>
-  <div class="car" data-car>
+  <div class="car rv" data-car>
     <div class="track-x">
       <article class="reason"><img src="assets/every-dog/reason-golden.jpg" alt="Owner wiping a golden retriever's teeth with a finger wipe" loading="lazy">
-        <div class="n">Reason 1</div><div class="s">No brush. No fight.</div>
-        <p>The wipe goes on your finger. Your dog feels your finger, not a brush. You can reach the back teeth too.</p></article>
+        <div class="n">Reason 1</div><div class="s">Easier than a toothbrush</div>
+        <p>It's just your finger, which your dog already knows. You can reach the back teeth too.</p></article>
       <article class="reason"><img src="assets/every-dog/reason-dalmatian.jpg" alt="Dalmatian licking a Roofus finger wipe" loading="lazy">
-        <div class="n">Reason 2</div><div class="s">It tastes like peanut butter.</div>
-        <p>So teeth time feels like a treat. And it has zero calories.</p></article>
+        <div class="n">Reason 2</div><div class="s">Peanut butter flavor</div>
+        <p>The flavor makes teeth time feel more like snack time.</p></article>
       <article class="reason"><img src="assets/every-dog/reason-texture.jpg" alt="Close-up of the bumpy and smooth sides of a Roofus wipe" loading="lazy">
-        <div class="n">Reason 3</div><div class="s">Two sides. Two jobs.</div>
+        <div class="n">Reason 3</div><div class="s">Each wipe has two sides</div>
         <p>The bumpy side scrubs off plaque. The smooth side cleans along the gums.</p></article>
-      <article class="reason"><img src="assets/every-dog/reason-glove.jpg" alt="Roofus wipe fitted on an index finger" loading="lazy">
-        <div class="n">Reason 4</div><div class="s">30 seconds. Then toss it.</div>
-        <p>No paste. No brush to wash. One wipe and you're done.</p></article>
+      <article class="reason"><img src="assets/every-dog/formula-hands.jpg" alt="Owner holding a Roofus canister fresh out of the mailer" loading="lazy">
+        <div class="n">Reason 4</div><div class="s">Done in about 30 seconds</div>
+        <p>You don't need paste or a brush to rinse. Use one wipe, then throw it away.</p></article>
       <article class="reason"><img src="assets/every-dog/canister-3.jpg" alt="Roofus Peanut Butter canister" loading="lazy">
-        <div class="n">Reason 5</div><div class="s">Made by a vet.</div>
-        <p>Dr. Nicole Leibman made the formula. No alcohol. No xylitol. No dyes. Safe if your dog licks it.</p></article>
+        <div class="n">Reason 5</div><div class="s">Fine if they lick it</div>
+        <p>It's made with plant-based coconut, aloe and shea butter, so a few licks are nothing to worry about.</p></article>
     </div>
     <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
   </div>
   <div class="wrap">
-    <div class="cta-block"><a class="btn" data-cta="reasons" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
-    <p class="tagline">Breath · Gums · Teeth</p>
-  </div>
-</section>
-
-<!-- 4. WHAT'S IN ONE WIPE -->
-<section class="formula" id="formula">
-  <div class="wrap">
-    <h2 class="h h2">What's in<br><span class="t">one wipe</span></h2>
-    <p class="lede">Each wipe does two things. The fabric lifts gunk off the teeth. The formula leaves the mouth clean and calm.</p>
-    <div class="f-grid">
-      <div class="f-photo">
-        <img src="assets/every-dog/formula-hands.jpg" alt="Hands holding a Roofus Peanut Butter canister fresh out of the mailer" loading="lazy">
-        <div class="callouts"><div>60 wipes in each can</div><div>30 seconds a clean</div><div>Made by a vet</div></div>
-        <div class="chip"><b>60-day promise</b><span>Don't love it? Get your money back.</span></div>
+    <div class="cta-block"><a class="btn" data-cta="reasons" href="https://get.roofuspet.com/">Start the routine<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/><path d="M12 11c3 0 6 4 6 6.5 0 1.8-1.5 2.5-3 2.5-1.2 0-2-.6-3-.6s-1.8.6-3 .6c-1.5 0-3-.7-3-2.5C6 15 9 11 12 11z"/></svg>Peanut butter is the best seller</div></div>
       </div>
-      <div>
-        <div class="stack">
-          <div><h3>The wipe</h3><ul><li>Bumpy BuffBead fabric</li><li>Coconut cleanser</li><li>Aloe + shea butter</li><li>Peanut butter taste</li></ul></div>
-          <div><h3>How often</h3><p>2 or 3 times a week. 30 seconds each time. Easy to keep doing.</p></div>
-        </div>
-        <div class="trust">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c8 0 14-6 14-14-8 0-14 5-14 13M5 19l7-7"/></svg>Plant-based</div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/></svg>No alcohol</div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 7 6 11a6 6 0 01-12 0c0-4 3-7 6-11z"/><path d="M9 14l2 2 4-4"/></svg>Safe to lick</div>
-        </div>
-        <a class="link" href="#ingredients">See what's inside</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 5. EVERY DOG -->
-<section id="dogs" style="background:var(--white)">
-  <div class="wrap">
-    <p class="eyebrow">Puppies · Seniors · Small dogs · Big dogs</p>
-    <h2 class="h h2">Made for<br><span class="t">every dog's mouth</span></h2>
-  </div>
-  <div class="car" data-car>
-    <div class="track-x">
-      <article class="dog"><img src="assets/every-dog/dog-frenchie.jpg" alt="French bulldog sitting by an opened Roofus box" loading="lazy"><div class="b"><h3>Flat faces</h3><div class="r">Frenchies · Pugs · Bostons</div><p>Small mouths where a brush won't fit. Your fingertip will.</p></div></article>
-      <article class="dog"><img src="assets/every-dog/dog-shepherd.jpg" alt="Shepherd mix sitting on a kitchen floor" loading="lazy"><div class="b"><h3>Big mouths</h3><div class="r">Shepherds · Labs · Goldens</div><p>More teeth to clean. The bumpy side does the hard work, so you can be quick.</p></div></article>
-      <article class="dog"><img src="assets/every-dog/reason-dalmatian.jpg" alt="Dalmatian tasting a peanut butter finger wipe" loading="lazy"><div class="b"><h3>Picky mouths</h3><div class="r">Dogs who hate toothpaste</div><p>Peanut butter taste, not paste. Let them lick it first. Then clean the front teeth.</p></div></article>
-    </div>
-    <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
-  </div>
 </section>
 
 <!-- 6. PROMISE + TRY-IT TESTS -->
 <section id="promise">
   <div class="wrap">
-    <div class="brackets"><div><b>60 DAYS</b><small>Money back</small></div><div><b>30 SEC</b><small>Per clean</small></div></div>
-    <h2 class="h h2">Try it on<br><span class="t">your own dog</span></h2>
-    <p class="lede">Don't just trust us. Test Roofus at home for 60 days. If you don't love it, we'll give your money back.</p>
+    <div class="brackets"><div><b>60 DAYS</b><small>Money back</small></div><div><b>30 SEC</b><small>Each time</small></div></div>
+    <h2 class="h h2 rv">Try it on<br><span class="t">your own dog</span></h2>
+    <p class="lede">Use Roofus at home for 60 days. If it's not right for your dog, we'll refund you.</p>
   </div>
-  <div class="car" data-car>
-    <div class="track-x">
-      <article class="test"><img src="assets/every-dog/reason-glove.jpg" alt="Finger wipe on an index finger" loading="lazy"><span class="when">Night 1</span><h3>The smell test</h3><p>Wipe the top teeth. Then smell their breath at bedtime. You be the judge.</p></article>
-      <article class="test"><img src="assets/every-dog/reason-texture.jpg" alt="Bumpy side of the wipe" loading="lazy"><span class="when">Every time</span><h3>The wipe test</h3><p>Look at the wipe when you're done. What you see came off their teeth.</p></article>
-      <article class="test"><img src="assets/every-dog/reason-golden.jpg" alt="Golden retriever letting its owner clean its teeth" loading="lazy"><span class="when">Week 2</span><h3>The habit test</h3><p>Count how many times you did it. 30 seconds is easy to fit in after dinner.</p></article>
-      <article class="test"><img src="assets/every-dog/canister-3.jpg" alt="Roofus canister" loading="lazy"><span class="when">Day 60</span><h3>The money-back test</h3><p>Not happy? Email us within 60 days and get your money back.</p></article>
-    </div>
-    <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  <div class="wrap">
+    <ol class="tl">
+      <li class="rv"><img src="assets/every-dog/tl-breath.jpg" alt="Dog licking its lips on its owner's lap" loading="lazy"><div class="tl-b"><span class="when">Night 1</span><h3>Check their breath</h3><p>Wipe the top teeth, then smell their breath at bedtime.</p></div></li>
+      <li class="rv"><img src="assets/every-dog/tl-wipe.jpg" alt="Dog sniffing a Roofus wipe on a finger" loading="lazy"><div class="tl-b"><span class="when">Every time</span><h3>Look at the wipe</h3><p>After each clean, check it. That's what came off their teeth.</p></div></li>
+      <li class="rv"><img src="assets/every-dog/tl-habit.jpg" alt="Owner wiping a dog's teeth in the backyard" loading="lazy"><div class="tl-b"><span class="when">Week 2</span><h3>Make it a habit</h3><p>Right after dinner is an easy time to fit it in.</p></div></li>
+      <li class="rv"><div class="tl-seal"><b>60</b><span>day<br>promise</span></div><div class="tl-b"><span class="when">Day 60</span><h3>Decide</h3><p>Not happy? Email us within 60 days for a refund.</p></div></li>
+    </ol>
   </div>
 </section>
 
-<!-- 7. THE HONEST PART -->
+<!-- 7. CAN / CAN'T (honest part, visual) -->
 <section class="honest" id="honest">
   <div class="wrap">
-    <h2 class="h h2">The honest truth<br><span class="t">about wipes</span></h2>
-  </div>
-  <div class="car" data-car>
-    <div class="track-x">
-      <article class="quote"><h3>It won't fix years of tartar.</h3><p>Hard brown tartar needs a vet. Roofus keeps clean teeth clean, between vet visits.</p><div class="who">What it's for</div></article>
-      <article class="quote"><h3>It works because you'll use it.</h3><p>A brush in a drawer cleans nothing. 30 seconds on your finger is easy to keep doing.</p><div class="who">Why it works</div></article>
-      <article class="quote"><h3>Some dogs need a slow start.</h3><p>Night 1, let them lick it. Night 2, do the front teeth. Then go a little further each time.</p><div class="who">How to start</div></article>
-      <article class="quote"><h3>It's not a treat. That's good.</h3><p>Dental chews add calories. A wipe adds none, and it reaches the front teeth too.</p><div class="who">Why not a chew</div></article>
+    <h2 class="h h2 rv">What Roofus<br><span class="t">can and can't do</span></h2>
+    <div class="tooth rv">
+      <svg viewBox="0 0 320 210" role="img" aria-label="A tooth with soft plaque on its surface and hard tartar at the gum line">
+        <defs><clipPath id="tc"><path d="M104 176 C92 130 88 76 100 50 C112 24 140 26 160 36 C180 26 208 24 220 50 C232 76 228 130 216 176 Z"/></clipPath></defs>
+        <path d="M104 176 C92 130 88 76 100 50 C112 24 140 26 160 36 C180 26 208 24 220 50 C232 76 228 130 216 176 Z" fill="#fff"/>
+        <g clip-path="url(#tc)">
+          <path d="M104 176 C92 130 88 76 100 50 C112 24 140 26 160 36 C180 26 208 24 220 50 C232 76 228 130 216 176 Z" fill="none" stroke="#F2CE4E" stroke-width="16" opacity=".8"/>
+          <path d="M80 118 C110 110 130 122 160 114 C190 122 210 110 240 118 L240 190 L80 190 Z" fill="#9A6A2E"/>
+          <path d="M80 118 C110 110 130 122 160 114 C190 122 210 110 240 118" fill="none" stroke="#7A5020" stroke-width="2"/>
+        </g>
+        <path d="M104 176 C92 130 88 76 100 50 C112 24 140 26 160 36 C180 26 208 24 220 50 C232 76 228 130 216 176 Z" fill="none" stroke="#1A1A1A" stroke-width="3"/>
+        <path d="M60 152 Q160 132 300 152 L300 200 Q300 210 290 210 L70 210 Q60 210 60 200 Z" fill="#F4A9A8"/>
+        <path d="M60 152 Q160 132 300 152" fill="none" stroke="#D9837F" stroke-width="3"/>
+        <line x1="104" y1="64" x2="40" y2="34" stroke="#108474" stroke-width="2.5"/><circle cx="104" cy="64" r="5" fill="#108474"/>
+        <line x1="110" y1="128" x2="40" y2="112" stroke="#7A5020" stroke-width="2.5"/><circle cx="110" cy="128" r="5" fill="#7A5020"/>
+      </svg>
+      <div class="tag-soft"><b>Soft plaque</b>Builds up every day. A wipe takes it off.</div>
+      <div class="tag-hard"><b>Hard tartar</b>Old plaque that set hard. Only a vet can remove it.</div>
     </div>
-    <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
-  </div>
-  <div class="wrap">
-    <div class="cta-block"><a class="btn" data-cta="honest" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
+    <div class="cc rv">
+      <div class="cc-col can"><h3><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>It can</h3><ul><li>Wipe off soft, daily plaque</li><li>Reach the front teeth and gum line</li><li>Fit into about 30 seconds</li></ul></div>
+      <div class="cc-col cant"><h3><span class="xk"><svg viewBox="0 0 12 12"><path d="M3 3l6 6M9 3l-6 6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span>It can't</h3><ul><li>Remove hard brown tartar</li><li>Replace your dog's vet checkups</li><li>Fix sore or bleeding gums</li></ul></div>
+    </div>
+    <div class="nights rv">
+      <p class="nights-h">Nervous dog? Start slow.</p>
+      <ol>
+        <li><span class="ni">1</span><b>Night 1</b>Let them sniff and lick it</li>
+        <li><span class="ni">2</span><b>Night 2</b>Do just the front teeth</li>
+        <li><span class="ni">3</span><b>Night 3</b>Work up to the whole mouth</li>
+      </ol>
+    </div>
+    <div class="cta-block"><a class="btn" data-cta="honest" href="https://get.roofuspet.com/">Try it on my dog<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>Nothing to rinse or store</div></div>
   </div>
 </section>
 
 <!-- 8. INGREDIENTS -->
 <section class="ingr" id="ingredients">
   <div class="wrap">
-    <h2 class="h h2">6 simple parts.<br>Nothing scary.</h2>
-    <p class="lede">Every part has one job: clean the teeth, care for the gums, or make your dog want to sit still.</p>
+    <h2 class="h h2 rv">What's in<br>each wipe</h2>
+    <p class="lede">Here's everything that goes into a Roofus wipe.</p>
   </div>
-  <div class="car" data-car>
+  <div class="car rv" data-car>
     <div class="track-x">
-      <article class="ing"><img src="assets/every-dog/ing-buffbead.jpg" alt="Bumpy side of the BuffBead fabric" loading="lazy"><span class="dose">Scrub side</span><h3>BuffBead™</h3><p>Little bumps grab plaque off the teeth</p></article>
-      <article class="ing"><img src="assets/every-dog/ing-sleeve.jpg" alt="Smooth side of the finger sleeve" loading="lazy"><span class="dose">Clean side</span><h3>Smooth side</h3><p>Flip it to clean along the gums</p></article>
-      <article class="ing"><img src="assets/every-dog/ing-coconut.jpg" alt="Coconut" loading="lazy"><span class="dose">Cleaner</span><h3>Coconut</h3><p>Cleans gently, with no alcohol sting</p></article>
-      <article class="ing"><img src="assets/every-dog/ing-aloe.jpg" alt="Aloe vera leaf" loading="lazy"><span class="dose">Calming</span><h3>Aloe vera</h3><p>Calms the gums. Safe if licked</p></article>
-      <article class="ing"><img src="assets/every-dog/ing-shea.jpg" alt="Shea butter" loading="lazy"><span class="dose">Softening</span><h3>Shea butter</h3><p>Keeps gums soft and cared for</p></article>
-      <article class="ing"><img src="assets/every-dog/ing-pb.jpg" alt="Peanut butter on a scoop" loading="lazy"><span class="dose">Taste</span><h3>Peanut butter</h3><p>Food-grade peanut butter taste</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-buffbead.jpg" alt="Bumpy side of the BuffBead fabric"><span class="dose">Scrub side</span><h3>BuffBead™</h3><p>Little bumps grab plaque off the teeth</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-sleeve.jpg" alt="Smooth side of the finger sleeve"><span class="dose">Clean side</span><h3>Smooth side</h3><p>Flip it to clean along the gums</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-coconut.jpg" alt="Coconut"><span class="dose">Cleaner</span><h3>Coconut</h3><p>Cleans gently, without stinging</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-aloe.jpg" alt="Aloe vera leaf"><span class="dose">Calming</span><h3>Aloe vera</h3><p>Soothing for gums</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-shea.jpg" alt="Shea butter"><span class="dose">Softening</span><h3>Shea butter</h3><p>Keeps gums soft and cared for</p></article>
+      <article class="ing"><img src="assets/every-dog/ing-peanut-butter.jpg" alt="Peanut butter on a scoop"><span class="dose">Taste</span><h3>Peanut butter</h3><p>Food-grade peanut butter taste</p></article>
     </div>
     <div class="arrows"><button type="button" data-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button type="button" data-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
   </div>
   <div class="wrap">
-    <div class="never"><b>Never inside</b>Alcohol · Xylitol · Parabens · Dyes · Added scent</div>
-    <div class="cta-block"><a class="btn" data-cta="ingredients" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
+    <div class="trust">
+          <div><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c8 0 14-6 14-14-8 0-14 5-14 13M5 19l7-7"/></svg></span>Plant-based</div>
+          <div><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 5 2 8 .4 2.4 1 5.5 2.5 5.5S9.5 17 10 15.5c.3-1 1.2-1.5 2-1.5s1.7.5 2 1.5c.5 1.5 1 5.5 2.5 5.5s2.1-3.1 2.5-5.5c.5-3 2-5 2-8C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></span>Gentle on gums</div>
+          <div><span class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 7 6 11a6 6 0 01-12 0c0-4 3-7 6-11z"/><path d="M9 14l2 2 4-4"/></svg></span>Safe to lick</div>
+    </div>
+    <p class="never-h">What we leave out</p>
+    <div class="never-grid">
+      <div class="nv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"><path d="M20 6h8v8l3 5v21a2 2 0 01-2 2H19a2 2 0 01-2-2V19l3-5z"/><path d="M17 26h14"/></svg></span>Alcohol</div>
+      <div class="nv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"><path d="M14 18l10-6 10 6v12l-10 6-10-6z"/><path d="M14 18l10 6 10-6M24 24v12"/></svg></span>Xylitol</div>
+      <div class="nv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M19 7h10M21 7v12L11 37a3 3 0 002.6 4.5h20.8A3 3 0 0037 37L27 19V7"/><path d="M15 31h18"/></svg></span>Parabens</div>
+      <div class="nv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"><path d="M24 7c6 9 11 14 11 21a11 11 0 01-22 0c0-7 5-12 11-21z"/></svg></span>Dyes</div>
+      <div class="nv"><span class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"><path d="M17 18h12v22a2 2 0 01-2 2h-8a2 2 0 01-2-2z"/><path d="M19 18v-5h8v5M27 13h5M35 9l2-2M35 13h3M35 17l2 2"/></svg></span>Scents</div>
+    </div>
+    <div class="cta-block"><a class="btn" data-cta="ingredients" href="https://get.roofuspet.com/">See flavors and kits<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/><path d="M12 11c3 0 6 4 6 6.5 0 1.8-1.5 2.5-3 2.5-1.2 0-2-.6-3-.6s-1.8.6-3 .6c-1.5 0-3-.7-3-2.5C6 15 9 11 12 11z"/></svg>60 wipes in every can</div></div>
   </div>
 </section>
 
 <!-- 9. COMPARISON -->
 <section id="compare">
   <div class="wrap">
-    <h2 class="h h2">Roofus vs<br><span class="t">the old ways</span></h2>
-    <p class="lede">Brushes are a fight. Chews add calories. Roofus is the easy way in between.</p>
-    <div class="cmp">
+    <h2 class="h h2 rv">How Roofus<br><span class="t">compares</span></h2>
+    <p class="lede">Toothbrushes take time and patience, and chews miss the front teeth. Here's how a wipe stacks up.</p>
+    <div class="cmp rv">
       <table>
-        <thead><tr><th></th><th class="us"><img src="assets/every-dog/logo.svg" alt="Roofus"></th><th>Dog toothbrush</th><th>Dental chews</th></tr></thead>
+        <thead><tr><th></th><th class="us"><img class="th-img" src="assets/every-dog/canister-pb.png" alt="Roofus canister"><img src="assets/every-dog/logo.svg" alt="Roofus"></th><th><img class="th-img" src="assets/every-dog/cmp-brush.jpg" alt="Dog toothbrush">Dog toothbrush</th><th><img class="th-img" src="assets/every-dog/cmp-chew.jpg" alt="Dental chews">Dental chews</th></tr></thead>
         <tbody>
           <tr><td>Time</td><td class="us">30 seconds</td><td>2 minutes</td><td>Until it's gone</td></tr>
           <tr><td>No fight</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td></tr>
-          <tr><td>Cleans front teeth</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td></tr>
-          <tr><td>Zero calories</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td></tr>
-          <tr><td>Nothing to wash</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td></tr>
-          <tr><td>Made by a vet</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td>Depends</td><td>Depends</td></tr>
+          <tr><td>Front teeth</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td></tr>
+          <tr><td>No washing</td><td class="us"><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td><td><span class="no">✕</span></td><td><span class="yes"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td></tr>
         </tbody>
       </table>
     </div>
-    <div class="cta-block"><a class="btn" data-cta="compare" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
+    <div class="cta-block"><a class="btn" data-cta="compare" href="https://get.roofuspet.com/">Try the wipe<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <div class="guar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l9 9-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></svg>Free shipping on the 4-can kit</div></div>
   </div>
 </section>
 
-<!-- 10. MEET THE VET (advisory board slot) -->
-<section class="vet" id="vet">
+<!-- 10b. YOUR KIT (closing offer, mirrors the reference launch kit) -->
+<section class="kit" id="kit">
   <div class="wrap">
-    <p class="eyebrow">Meet the vet</p>
-    <h2 class="h h2">The vet behind<br><span class="t">every wipe</span></h2>
-    <div class="vet-card">
-      <div class="vet-photo"><img src="assets/every-dog/vet-leibman.jpg" alt="Dr. Nicole Leibman, DVM" onerror="this.remove()" loading="lazy">NL</div>
-      <div class="vet-body">
-        <h3>Dr. Nicole Leibman</h3>
-        <div class="cred">DVM · Board-certified vet specialist</div>
-        <p>Dr. Leibman made the Roofus formula. She followed three simple rules:</p>
-        <ul class="rules">
-          <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Nothing a dog shouldn't swallow</li>
-          <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Nothing that stings the gums</li>
-          <li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6.3l2.6 2.5L10 3.4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Nothing that takes more than 30 seconds</li>
-        </ul>
-      </div>
+    <p class="eyebrow">Today's deal</p>
+    <h2 class="h h2 rv">Your 4-month<br><span class="t">teeth kit</span></h2>
+    <div class="receipt rv">
+      <div class="r-head"><img src="assets/every-dog/logo.svg" alt="Roofus"><span>Your order</span></div>
+      <ul class="r-lines">
+        <li><span>4 cans of teeth wipes<small>240 wipes · about 4 months</small></span><b>$112.00</b></li>
+        <li class="r-disc"><span>Buy 2, Get 2 Free</span><b>−$63.00</b></li>
+        <li><span>Mystery gift</span><b>FREE</b></li>
+        <li><span>Shipping (US)</span><b>FREE</b></li>
+        <li><span>60-day money-back promise</span><b>YES</b></li>
+      </ul>
+      <div class="r-total"><span>Total</span><b>$49.00</b></div>
+      <p class="r-save">You save $63 (56%)</p>
+      <div class="r-per"><span>That works out to</span><strong>About 20¢</strong><em>per clean</em><small>$49 ÷ 240 wipes</small></div>
+      <div class="r-bar" aria-hidden="true"></div>
     </div>
-    <div class="cta-block"><a class="btn" data-cta="vet" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
+    <div class="cta-block" style="margin-top:22px"><a class="btn" data-cta="kit" href="https://get.roofuspet.com/">Get my kit for $49<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="kitnote">Next page: choose a flavor, then check out.</p></div>
   </div>
 </section>
 
 <!-- 11. FAQ -->
 <section id="faq">
   <div class="wrap">
-    <h2 class="h h2">Questions?<br><span class="t">We've got answers</span></h2>
+    <h2 class="h h2 rv">Common<br><span class="t">questions</span></h2>
     <div class="faq">
       <details open><summary>What is Roofus?</summary><div class="a">Roofus is a teeth-cleaning wipe for dogs. It slides onto your finger. One side is bumpy to scrub. The other side is smooth to clean the gums. Each can has 60 wipes.</div></details>
-      <details><summary>Who made it?</summary><div class="a">Dr. Nicole Leibman, a vet, made the formula.</div></details>
-      <details><summary>How do I use it?</summary><div class="a">Put a wipe on your finger. Rub the teeth with the bumpy side. Flip it and wipe the gums with the smooth side. Throw it away. It takes about 30 seconds.</div></details>
+      <details><summary>How do I use it?</summary><div class="a">Put a wipe on your finger. Rub the teeth with the bumpy side, then use the smooth side along the gums. Throw it away. It takes about 30 seconds.</div></details>
       <details><summary>How often should I use it?</summary><div class="a">2 or 3 times a week. You can use it every day if you like.</div></details>
-      <details><summary>What if my dog won't let me?</summary><div class="a">Go slow. Night 1, let them lick it. Night 2, clean the front teeth. Add a few more teeth each time. The peanut butter taste helps.</div></details>
+      <details><summary>What if my dog won't let me?</summary><div class="a">Use the 3-night plan above. Most of the work is letting them get used to the taste.</div></details>
       <details><summary>Is it safe if my dog licks it?</summary><div class="a">Yes. It has no alcohol, no xylitol, no parabens, no dyes and no added scent.</div></details>
-      <details><summary>Does it replace the vet?</summary><div class="a">No. If your dog has hard brown tartar or sore gums, see your vet first. Roofus is for home care between vet visits.</div></details>
-      <details><summary>When will my order ship?</summary><div class="a">We sold out. New orders ship on Thursday, October 29.</div></details>
-      <details><summary>What is the 60-day promise?</summary><div class="a">Try Roofus for 60 days. If you don't love it, contact us and we'll give your money back.</div></details>
+      <details><summary>What is the 60-day promise?</summary><div class="a">You have 60 days to try it. If you're not happy, we'll refund your order.</div></details>
     </div>
-    <div class="cta-block"><a class="btn" data-cta="faq" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="guar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3zm-1.2 13.6l6-6-1.4-1.4-4.6 4.6-2.2-2.2-1.4 1.4 3.6 3.6z"/></svg>60-day money-back guarantee</div></div>
+    <div class="cta-block"><a class="btn" data-cta="faq" href="https://get.roofuspet.com/">Get started<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="tm">Clean teeth. No fight.</div>
     <p>Roofus wipes are for at-home teeth care. They are not meant to diagnose, treat, cure or prevent any disease. If your dog shows signs of dental disease, see your vet.</p>
     <p>Stats: VCA Animal Hospitals (vcahospitals.com), CareCredit 2025 pet dental cost research.</p>
     <p>© 2026 Roofus. All rights reserved.</p>
   </div>
 </footer>
 
-<div class="toast" id="toast" role="status">Deal saved: Buy 2, Get 2 Free</div>
+<div class="toast" id="toast" role="status">Deal saved. It's on the next page.</div>
 
-<div class="sticky"><a class="btn" data-cta="sticky" href="https://get.roofuspet.com/">Try Roofus today<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+<div class="sticky"><a class="btn" data-cta="sticky" href="https://get.roofuspet.com/">Claim my 2 free cans<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
 
 <script>
 (function(){
+  document.documentElement.classList.add('js');
   // CTAs hand off to the PDP with lp/cta params; ad UTMs pass through
   var PDP = 'https://get.roofuspet.com/', LP = 'every-dog';
   var inbound = new URLSearchParams(location.search);
@@ -598,10 +824,14 @@ footer p{max-width:620px;margin:0 auto 10px}
   // Carousels (arrows hide when every card already fits)
   document.querySelectorAll('[data-car]').forEach(function(c){
     var t=c.querySelector('.track-x'), ar=c.querySelector('.arrows'), prev=c.querySelector('[data-prev]'), next=c.querySelector('[data-next]');
-    function step(){ var k=t.children[0]; return k ? k.getBoundingClientRect().width+14 : 300; }
     function sync(){ var fits = t.scrollWidth <= t.clientWidth + 4; ar.classList.toggle('hide', fits); prev.disabled = t.scrollLeft < 4; next.disabled = t.scrollLeft + t.clientWidth >= t.scrollWidth - 4; }
-    prev.addEventListener('click',function(){ t.scrollBy({left:-step(),behavior:'smooth'}); });
-    next.addEventListener('click',function(){ t.scrollBy({left:step(),behavior:'smooth'}); });
+    function go(dir){ var kids=[].slice.call(t.children), pad=parseFloat(getComputedStyle(t).paddingLeft)||0, cur=t.scrollLeft;
+      var offs=kids.map(function(k){ return Math.min(k.offsetLeft-pad, t.scrollWidth-t.clientWidth); });
+      var target = dir>0 ? offs.find(function(o){ return o>cur+4; }) : offs.slice().reverse().find(function(o){ return o<cur-4; });
+      if(target===undefined) target = dir>0 ? t.scrollWidth : 0;
+      t.scrollTo({left:target,behavior:'smooth'}); }
+    prev.addEventListener('click',function(){ go(-1); });
+    next.addEventListener('click',function(){ go(1); });
     t.addEventListener('scroll',sync,{passive:true}); window.addEventListener('resize',sync); sync();
   });
 
@@ -612,24 +842,65 @@ footer p{max-width:620px;margin:0 auto 10px}
   }
   snd.addEventListener('click',function(){ v.muted=!v.muted; snd.textContent = v.muted ? 'Tap for sound' : 'Sound on'; if(v.paused) v.play().catch(function(){}); });
 
+  // Read progress bar
+  var prog=document.createElement('div'); prog.className='prog'; document.body.appendChild(prog);
+  function pr(){ var h=document.documentElement.scrollHeight-innerHeight; prog.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'; }
+  addEventListener('scroll',pr,{passive:true}); pr();
+
+  // Reveal on scroll
+  var rvs=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); } }); },{rootMargin:'0px 0px -8% 0px'});
+    rvs.forEach(function(el){ ro.observe(el); });
+  } else rvs.forEach(function(el){ el.classList.add('in'); });
+
+  // Owner video wall: play only what's on screen
+  if('IntersectionObserver' in window){
+    var vo=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) e.target.play().catch(function(){}); else e.target.pause(); }); },{threshold:.5});
+    document.querySelectorAll('video[data-auto]').forEach(function(x){ vo.observe(x); });
+  }
+
+  // Sticky CTA steps aside when an in-page CTA is visible
+  var sticky=document.querySelector('.sticky'), seenCta=new Set();
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){ es.forEach(function(e){ e.isIntersecting ? seenCta.add(e.target) : seenCta.delete(e.target); }); sticky.classList.toggle('off', seenCta.size>0); },{threshold:0});
+    document.querySelectorAll('.cta-block .btn, .hero-cta .btn').forEach(function(b){ so.observe(b); });
+  }
+
+  // Breath check: 3 questions, always ends on a next step
+  var Q=['Is your dog 3 years old or older?','Does their breath make you turn away?','Do you brush their teeth every day?'];
+  var qi=0, yes=0, quiz=document.getElementById('quiz'), qq=document.getElementById('qq'), bars=quiz.querySelectorAll('.qbar i');
+  quiz.querySelectorAll('.qbtns button').forEach(function(b){ b.addEventListener('click',function(){
+    var a=+b.getAttribute('data-a'); if(qi===2) a=1-a; yes+=a; qi++;
+    if(qi<Q.length){ qq.textContent=Q[qi]; bars[qi].classList.add('on'); return; }
+    document.getElementById('qrH').textContent = yes>=2 ? 'Your dog is a great fit' : 'Start the habit early';
+    document.getElementById('qrP').textContent = yes>=2
+      ? '4 in 5 dogs over age 3 have dental disease. A 30-second wipe, 2 or 3 times a week, helps keep plaque off between vet visits.'
+      : 'Clean teeth are easier to keep clean. A quick wipe a few times a week builds the habit before plaque builds up.';
+    quiz.classList.add('done');
+  }); });
+
   // Entry offer popup, once per session
   var pop=document.getElementById('pop'), seen=false;
   try { seen = sessionStorage.getItem('rf_pop')==='1'; } catch(e){}
   function closePop(){ pop.classList.remove('on'); try{ sessionStorage.setItem('rf_pop','1'); }catch(e){} }
-  // Show once, only after the reader scrolls past the first screen (never over the hero)
+  // Show once, after the reader reaches the stats below the video; never covers the page
   var shown=false;
   function show(){ if(shown||seen) return; shown=true; pop.classList.add('on'); }
   if(!seen){
-    window.addEventListener('scroll', function onS(){ if(scrollY > innerHeight*0.9){ window.removeEventListener('scroll', onS); setTimeout(show, 600); } }, {passive:true});
+    var whyEl=document.getElementById('why');
+    if('IntersectionObserver' in window && whyEl){
+      var po=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ po.disconnect(); setTimeout(show, 800); } },{threshold:.3});
+      po.observe(whyEl);
+    }
   }
   document.getElementById('popYes').addEventListener('click', function(){
     closePop();
-    document.querySelector('.pill').textContent = 'Deal saved: Buy 2 Get 2';
+    document.querySelector('.pill').textContent = 'Deal saved ✓';
     var t=document.getElementById('toast'); t.classList.add('on'); setTimeout(function(){ t.classList.remove('on'); }, 2600);
     if(scrollY < document.getElementById('how').offsetTop - 80) document.getElementById('how').scrollIntoView({behavior:'smooth'});
   });
   pop.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click',closePop); });
-  pop.addEventListener('click',function(e){ if(e.target===pop) closePop(); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') closePop(); });
 })();
 </script>
